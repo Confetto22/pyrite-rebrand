@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ff5e3a;
+  --secondary-color: #82869a;
+  --neon: #e3f81f;
+  --bg-color: #232639;
+  --heading-font: "Roboto Condensed", serif;
+  --main-font: "Source Sans 3", serif;
+}
