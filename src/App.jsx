@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
+import Footer from "./components/Footer";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         {/* <Route path="/#" element={<About />} /> */}
       </Routes>
+      <Footer />
     </Wrapper>
   );
 }

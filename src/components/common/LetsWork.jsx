@@ -3,15 +3,7 @@ import Button from "./Button";
 
 const LetsWork = () => {
   return (
-    <section className="lets_work  h-[70vh] relative">
-      <video
-        src="https://res.cloudinary.com/dv9aqxptd/video/upload/v1738979355/pyrite/y2mate.com_-_INDONESIA_Our_HomeCinematic_Video_v720P_online-video-cutter.com_vgp2au.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="videoBg absolute  h-full w-full object-cover  object-center"
-      ></video>
+    <section className="lets_work  h-[70vh] bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738977282/pyrite/film-industry-4GJLQAD_z3laxr.jpg')] bg-center bg-cover">
       <div className="cover relative w-full h-full text-white flex flex-col items-center justify-center gap-8 p-5">
         <h3 className="text-[#E3F81F] uppercase tracking-wider text-[1.6rem]">
           let&apos;s work
