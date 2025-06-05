@@ -42,6 +42,11 @@ export const projects = [
         icon: "bx bx-folder-open",
         value: "Movie",
       },
+      {
+        name: "duration",
+        icon: "bx bx-folder-open",
+        value: "3 months",
+      },
     ],
     projectList: [
       "City In The Snow",
@@ -96,6 +101,11 @@ export const projects = [
         icon: "bx bx-folder-open",
         value: "Music Video",
       },
+      {
+        name: "duration",
+        icon: "bx bx-folder-open",
+        value: "3 months",
+      },
     ],
     projectList: [
       "City In The Snow",
@@ -148,6 +158,11 @@ export const projects = [
         name: "Category",
         icon: "bx bx-folder-open",
         value: "Aerial VR",
+      },
+      {
+        name: "duration",
+        icon: "bx bx-folder-open",
+        value: "3 months",
       },
     ],
     projectList: [

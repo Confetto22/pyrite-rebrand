@@ -6,6 +6,11 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
+import LetsWork from "./components/common/LetsWork";
+import Footer from "./components/Footer";
+import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
+import Projects from "./pages/Projects";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -21,10 +26,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:name" element={<ProjectDetail />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:name" element={<ProjectDetail />} />
         <Route path="/about-us" element={<About />} />
-        {/* <Route path="/#" element={<About />} /> */}
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:service" element={<ServiceDetail />} />
+        {/* <Route path="/:service" element={<ServiceDetail />} /> */}
       </Routes>
+      <LetsWork />
+      <Footer />
     </Wrapper>
   );
 }

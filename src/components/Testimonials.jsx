@@ -36,7 +36,7 @@ const Testimonials = () => {
         title={"testimonials"}
         titleStyle={""}
         heading={"What Clients Say About Us"}
-        headingStyle={"md:text-[3rem] max-w-[500px]  lg:text-[4rem]"}
+        headingStyle={"md:text-[3rem] text-black max-w-[500px]  lg:text-[4rem]"}
         divStyle={" items-center text-center"}
         newDivStyle={"justify-center "}
       />

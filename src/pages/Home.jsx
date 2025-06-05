@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import HeroCard from "../components/common/HeroCard";
 import SecHeading from "../components/common/SecHeading";
 import Button from "../components/common/Button";
@@ -9,7 +9,9 @@ import OurServices from "../components/OurServices";
 import OurProjects from "../components/OurProjects";
 import Testimonials from "../components/Testimonials";
 import Marquee from "../components/common/marquee/Marquee";
-import LetsWork from "../components/common/LetsWork";
+import { Link } from "react-router-dom";
+import ChooseUs from "../components/ChooseUs";
+// import LetsWork from "../components/common/LetsWork";
 
 const countUpValues = [
   {
@@ -33,64 +35,65 @@ const countUpValues = [
 const trustedBrands = [
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721679436/pyrite/bloombergLogo_yytgmn.svg",
-    styling: "",
+    styling: "max-w-[300px]",
   },
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721084981/pyrite/amalogo_n7sav9.png",
-    styling: "",
+    styling: "max-w-[300px]",
   },
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721084981/pyrite/vitalstrategieslogo_i6znja.png",
-    styling: "",
+    styling: "max-w-[300px]",
   },
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721084980/pyrite/policeservicelogo_wdst6t.png",
-    styling: "",
+    styling: "max-w-[300px]",
   },
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721086062/pyrite/globalroadsafetylogo_yfyrji.png",
-    styling: "max-w-[130px]",
+    styling: "max-w-[110px]",
   },
   {
     img: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1721084981/pyrite/roadsafetylogo_z4uqge.png",
-    styling: "max-w-[130px]",
+    styling: "max-w-[110px]",
   },
 ];
 
 const Home = () => {
   return (
-    <section className=" homepage ">
+    <section className=" homepage text-black">
       <HeroCard />
-      <section className="home_about bg-[var(--bg-color)] flex flex-col md:flex-row md:items-center gap-8 lg:gap-12 lg:flex-row  items-start lg:items-center  p-4 py-16  lg:px-[3rem] ">
+      <section className="home_about  flex flex-col md:flex-row md:items-center gap-8 lg:gap-12 lg:flex-row  items-start lg:items-center  p-4 py-16  lg:px-[3rem] ">
         <div className="about_text max-w-[600px] lg:max-w-[50%] flex flex-col items-start lg:justify-between gap-4 lg:w-[50%] ">
           <SecHeading
             title={"about us"}
             titleStyle={""}
             heading={"We Are a Team of Passionate Filmmakers"}
-            headingStyle={"md:text-[3rem] max-w-[500px]  lg:text-[4rem]"}
+            headingStyle={
+              "md:text-[3rem] text-black max-w-[500px]  lg:text-[4rem]"
+            }
             divStyle={""}
           />
           <div className="all_countups grid grid-cols-2 gap-x-16 gap-y-7 py-5">
             {countUpValues.map((value) => (
               <div
                 key={value.name}
-                className="countup flex flex-col gap-2 bg-[#1d07026e] p-4 pt-6 items-center justify-center"
+                className="countup flex flex-col gap-2 bg-[var(--primary-color)] text-white p-4 pt-6 items-center justify-center"
               >
-                <p className="flex items-center gap-1  text-base text-center">
-                  <span className="font-bold text-[3rem]">
+                <p className="flex items-center gap-1  text-base text-center ">
+                  <span className="font-bold text-[3rem] ">
                     <CountUp
                       end={value.value}
                       duration={7}
                       enableScrollSpy
                       scrollSpyDelay={20}
                       scrollSpyOnce
+                      className=""
                     />
                   </span>
-                  <sup className="font-bold text-[1.7rem] text-[var(--secondary-color)]">
-                    +
-                  </sup>
+                  <sup className="font-bold text-[1.7rem]  ">+</sup>
                 </p>
-                <p className="capitalize font-light text-[var(--secondary-color)] text-center">
+                <p className="capitalize font-light  text-center ">
                   {value.name}
                 </p>
               </div>
@@ -102,9 +105,9 @@ const Home = () => {
             screen
           </p> */}
           <p>
-            Proin et magna blandit arcu pellentesque scelerisque sit amet a
-            sapien. Aenean purus nunc, cursus in ante in, vehicula facilisis
-            dui.
+            We are an independent media, branding agency with communications
+            expertise, international reach, proven results and a relentless
+            energy to push your business further.
           </p>
           <Button refLink={"#"}>learn more</Button>
           {/* <Link
@@ -122,7 +125,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="cinematography p-6 flex flex-col md:flex-row md:gap-8 items-start gap-5 md:items-center">
+      <section className="cinematography bg-[var(--bg-color)] py-16 p-6 flex flex-col md:flex-row md:gap-8 items-start gap-5 md:items-center">
         <div className="cinema_img  md:w-[50%] overflow-hidden max-w-[500px] rounded-lg md:max-w-[50%]">
           <img
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247263/pyrite/IMG_9331_weto6p.jpg"
@@ -130,12 +133,14 @@ const Home = () => {
             className="w-full rounded-lg  object-cover object-left hover:scale-110 ease-in duration-300 md:h-[70vh]"
           />
         </div>
-        <div className="cinema_text items-start md:items-start md:w-[55%] md:pr-12 text-[var(--secondary-color)] flex flex-col gap-5">
+        <div className="cinema_text text-white items-start md:items-start md:w-[55%] md:pr-12 text-[var(--secondary-color)] flex flex-col gap-5">
           <SecHeading
             title={"our cinematography"}
             titleStyle={""}
             heading={"Cinematography and Film Production"}
-            headingStyle={"md:text-[3rem] max-w-[500px]  lg:text-[4rem]"}
+            headingStyle={
+              "md:text-[3rem] max-w-[500px]  lg:text-[4rem] text-white"
+            }
             divStyle={""}
           />
           <p className="font-bold text-[1.3rem] leading-7 md:text-[1.6rem] ">
@@ -153,25 +158,41 @@ const Home = () => {
       </section>
       <OurServices />
       <OurProjects />
-      <section className="trusted my-24 bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738977282/pyrite/film-industry-4GJLQAD_z3laxr.jpg')] bg-cover bg-center min-h-[50vh]">
-        <div className="cover min-h-[50vh] py-7 flex flex-col items-center justify-evenly">
-          <p className="text-center px-5 text-[white] text-[2rem] font-semibold">
-            Trusted by many clients
+      <ChooseUs />
+      <section className="partner bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738977282/pyrite/film-industry-4GJLQAD_z3laxr.jpg')] bg-cover bg-center">
+        <div className=" min-h-[70vh] bg-[#000000ad] flex flex-col items-center justify-center text-white text-center p-8 gap-5">
+          <h2 className="font-[800] text-[2rem] capitalize max-w-[700px]">
+            Partner with Pyrite Today! Contact Us for a Cinematic Journey.
+          </h2>
+          <p className="text-[1.2rem] font-light max-w-[700px]">
+            Explore exciting partnership opportunities that bring stories to
+            life. Let&apos;s create magic together in the world of film making.
           </p>
-          <Marquee marqueestyle={""}>
-            {trustedBrands.map((brand) => (
-              <img
-                src={brand.img}
-                className={`max-w-[300px]  ${brand.styling}`}
-                alt="trusted brand"
-                key={brand.img}
-              />
-            ))}
-          </Marquee>
+          <Link
+            to={"#"}
+            className="uppercase bg-[var(--primary-color)] px-4 py-2 font-[700]"
+          >
+            case study
+          </Link>
         </div>
       </section>
+      <section className="trusted my-24  bg-cover bg-center   min-h-[30vh] py-7 flex flex-col items-center justify-evenly">
+        <p className="text-center px-5 text-[white] text-[2rem] font-semibold">
+          Trusted by many clients
+        </p>
+        <Marquee marqueestyle={""}>
+          {trustedBrands.map((brand) => (
+            <img
+              src={brand.img}
+              className={`  ${brand.styling}`}
+              alt="trusted brand"
+              key={brand.img}
+            />
+          ))}
+        </Marquee>
+      </section>
       <Testimonials />
-      <LetsWork />
+      {/* <LetsWork /> */}
     </section>
   );
 };

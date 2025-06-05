@@ -1,12 +1,12 @@
-import { Link, useNavigate } from "react-router-dom";
-import Button from "./common/Button";
+import { Link } from "react-router-dom";
+// import Button from "./common/Button";
 import { projects } from "./common/projects";
 import SecHeading from "./common/SecHeading";
 // import { IoPlayCircleOutline } from "react-icons/io5";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 const OurProjects = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <section className="our_projects p-6 flex flex-col gap-7 py-24">
       <div className="flex flex-col gap-5 md:flex-row items-center justify-between md:px-12">
@@ -14,18 +14,23 @@ const OurProjects = () => {
           title={"Our Projects"}
           titleStyle={""}
           heading={"Videos That Will Last Lifetime"}
-          headingStyle={"md:text-[3rem] max-w-full md:w-[80%]  lg:text-[4rem]"}
+          headingStyle={
+            "md:text-[3rem] text-black max-w-full md:w-[80%]  lg:text-[4rem]"
+          }
           divStyle={
             "flex items-center md:items-start md:text-left text-center md:w-[70%] "
           }
           newDivStyle={"md:justify-start  justify-center "}
         />
-        <Button btStyle={"md:w-[30%] lg:w-[20%]  text-center"}>
+        <Link
+          to={"/projects"}
+          className="bg-[var(--primary-color)] px-7 py-3 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[80%] border-2 border-[var(--primary-color)] hover:bg-transparent hover:text-[var(--primary-color)] ease-in duration-300"
+        >
           view more
-        </Button>
+        </Link>
       </div>
       <div className="all_projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:items-center">
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <div
             key={project.name}
             className={`project ${project.img} bg-center bg-cover h-[60vh] max-w-[600px] relative `}
@@ -41,23 +46,26 @@ const OurProjects = () => {
                 details <HiOutlineArrowLongRight />
               </Link> */}
               <div className="flex flex-col items-start gap-3 text-white">
-                <p
+                <Link
+                  to={`/projects/${project.name
+                    .replaceAll(" ", "-")
+                    .toLowerCase()}`}
                   className="capitalize font-semibold text-[#E3F81F] text-[1.5rem] cursor-pointer"
-                  onClick={() => navigate(`/${project.name}`)}
                 >
                   {project.name} - {project.year}
-                </p>
+                </Link>
                 <p className="text-[var(--secondary-color)]">
                   {/* {project.desc[0].slice(0, 100)}... */}
                   {project.desc.pargagraph1.slice(0, 100)}...
                 </p>
-                <button
+                <Link
+                  to={`/projects/${project.name
+                    .replaceAll(" ", "-")
+                    .toLowerCase()}`}
                   className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[#E3F81F] font-semibold  "
-                  type="button"
-                  onClick={() => navigate(`/${project.name}`)}
                 >
                   see more <HiOutlineArrowLongRight />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
