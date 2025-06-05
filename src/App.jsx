@@ -6,15 +6,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
-<<<<<<< HEAD
+
 import LetsWork from "./components/common/LetsWork";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import Projects from "./pages/Projects";
-=======
-import Footer from "./components/Footer";
->>>>>>> d0ea976a8e2ef758885e79d863d8f9da7b9b8ce7
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -37,10 +34,9 @@ function App() {
         <Route path="/services/:service" element={<ServiceDetail />} />
         {/* <Route path="/:service" element={<ServiceDetail />} /> */}
       </Routes>
-<<<<<<< HEAD
+
       <LetsWork />
-=======
->>>>>>> d0ea976a8e2ef758885e79d863d8f9da7b9b8ce7
+
       <Footer />
     </Wrapper>
   );
