@@ -52,9 +52,9 @@ const HeroCard = () => {
       {heroCardValues.map((heroCard) => (
         <SwiperSlide key={heroCard.h1}>
           <section
-            className={`hero text-white  flex flex-col items-start justify-center gap-3  h-[120vh] bg-no-repeat bg-cover ${heroCard.bgPic}`}
+            className={`hero text-white  flex flex-col items-start justify-center gap-3  min-h-[90vh] bg-no-repeat bg-cover ${heroCard.bgPic}`}
           >
-            <div className="cover p-5 gap-6 flex flex-col items-start justify-center pt-32">
+            <div className="cover min-h-[90vh] p-5 gap-6 flex flex-col items-start justify-center">
               <h3 className="text-[var(--primary-color)] uppercase md:flex-row flex-col w-full flex items-start md:items-center gap-4 font-bold text-[1rem] md:max-w-[600px] md:text-[1.1rem] md:w-full">
                 <hr className="bg-[var(--primary-color)] border-none h-[1px] w-[13%]" />{" "}
                 {heroCard.subtitle}
