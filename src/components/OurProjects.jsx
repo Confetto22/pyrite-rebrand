@@ -58,9 +58,14 @@ const OurProjects = () => {
                   {/* {project.desc[0].slice(0, 100)}... */}
                   {project.desc.pargagraph1.slice(0, 100)}...
                 </p>
-                <p className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  ">
+                <Link
+                  to={`/projects/${project.name
+                    .replaceAll(" ", "-")
+                    .toLowerCase()}`}
+                  className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  "
+                >
                   see more <HiOutlineArrowLongRight />
-                </p>
+                </Link>
               </div>
             </div>
           </div>
