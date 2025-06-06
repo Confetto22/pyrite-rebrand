@@ -9,29 +9,29 @@ import SecHeading from "./SecHeading";
 
 const faqValues = [
   {
-    question: "What kind of movies does Pyrite Classics produce?",
+    question: "What kind of movies does Jilova Studios produce?",
     answer:
-      "Pyrite Classics produces a wide range of films, including dramas, comedies, documentaries, and more. We're passionate about telling unique and compelling stories that resonate with audiences.",
+      "Jilova Studios produces a wide range of films, including dramas, comedies, documentaries, and more. We're passionate about telling unique and compelling stories that resonate with audiences.",
   },
   {
-    question: " How can I submit my script or idea to Pyrite Classics?",
+    question: " How can I submit my script or idea to Jilova Studios?",
     answer:
       "We'd love to hear from you! You can submit your script or idea through our online submission form on our website. Our team reviews all submissions carefully, and we'll be in touch if we're interested in learning more.",
   },
   {
     question:
-      "What is the typical production process like for a Pyrite Classics film?",
+      "What is the typical production process like for a Jilova Studios film?",
     answer:
       "Our production process typically involves several stages, including development, pre-production, production, and post-production. We work closely with our writers, directors, and producers to bring each project to life.",
   },
   {
-    question: "Can I purchase or stream Pyrite Classics films online?",
+    question: "Can I purchase or stream Jilova Studios films online?",
     answer:
       "Yes! Many of our films are available to stream or purchase on popular platforms like Amazon Prime, Apple TV, and Google Play. You can also find our films on our website, where we often feature trailers and clips",
   },
   {
     question:
-      "How can I stay up-to-date on Pyrite Classics' latest projects and news?",
+      "How can I stay up-to-date on Jilova Studios' latest projects and news?",
     answer:
       "We'd love for you to join our community! You can follow us on social media via the links below or sign up for our newsletter on our website to stay up-to-date on our latest projects, news, and behind-the-scenes insights",
     links: [

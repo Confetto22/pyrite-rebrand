@@ -72,7 +72,7 @@ const About = () => {
           <SecHeading
             title={"about us"}
             titleStyle={""}
-            heading={"welcome to pyrite classics"}
+            heading={"welcome to jilova studios"}
             headingStyle={"md:text-[3rem] text-black max-w-[500px]  "}
             divStyle={" items-start "}
             newDivStyle={"justify-start "}
@@ -96,6 +96,7 @@ const About = () => {
             craft compelling stories that captivate, inspire, and transform
             audiences. We believe that film has the power to transport us to new
             worlds, challenge our perspectives, and connect us with others in
+            meaningful ways.
           </motion.p>
           <motion.p
             initial={{ y: 40, opacity: 0 }}
@@ -109,11 +110,11 @@ const About = () => {
             viewport={{ once: true }}
             className="text-[1.1rem]"
           >
-            meaningful ways. Our team is comprised of experienced professionals
-            with a deep understanding of the film industry. From writers and
-            directors to producers and editors, each member brings their unique
-            expertise and passion to every project. We&apos;re a collaborative
-            team that thrives on creativity, innovation, and mutual respect.
+            Our team is comprised of experienced professionals with a deep
+            understanding of the film industry. From writers and directors to
+            producers and editors, each member brings their unique expertise and
+            passion to every project. We&apos;re a collaborative team that
+            thrives on creativity, innovation, and mutual respect.
           </motion.p>
           {/* <Link
             to={"#"}

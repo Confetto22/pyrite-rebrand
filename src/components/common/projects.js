@@ -70,9 +70,9 @@ export const projects = [
     ],
     desc: {
       pargagraph1:
-        "'Mensuro' was the title of the music video produced by Pyrite in 2021. The team employed rich and exquisite creativity from preproduction through production to post production.",
+        "'Mensuro' was the title of the music video produced by Jilova Studios in 2021. The team employed rich and exquisite creativity from preproduction through production to post production.",
       pargagraph2:
-        "'Mensuro' was the title of the music video produced by Pyrite in 2021. The team employed rich and exquisite creativity from preproduction through production to post production.",
+        "'Mensuro' was the title of the music video produced by Jilova Studios in 2021. The team employed rich and exquisite creativity from preproduction through production to post production.",
     },
     refLink: "#",
     cardDetails: [

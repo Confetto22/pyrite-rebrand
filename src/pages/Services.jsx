@@ -47,7 +47,7 @@ const Services = () => {
           viewport={{ once: true }}
           className="font-[300] md:max-w-[800px]"
         >
-          At Pyrite Classics, we provide a wide range of video production
+          At Jilova Studios, we provide a wide range of video production
           services that meets the needs of all our clients. Working together, we
           will develop a thorough understanding of your goals, your budget and
           your creative vision. Whichever of our video production services you

@@ -12,7 +12,7 @@ const storyValues = [
   },
   {
     title: "Our Philosophy",
-    text: "At Pyrite Classics, we believe that storytelling is an art form that has the power to transform lives. We're committed to crafting stories that are authentic, engaging, and memorable. Our philosophy is rooted in collaboration, creativity, and a relentless pursuit of excellence.",
+    text: "At Jilova Studios, we believe that storytelling is an art form that has the power to transform lives. We're committed to crafting stories that are authentic, engaging, and memorable. Our philosophy is rooted in collaboration, creativity, and a relentless pursuit of excellence.",
   },
   {
     title: "Looking Ahead",
@@ -28,7 +28,7 @@ const Story = () => {
           <SecHeading
             title={"our story"}
             titleStyle={" w-full text-left"}
-            heading={"The Journey of Pyrite Classics"}
+            heading={"The Journey of Jilova Studios"}
             headingStyle={
               "md:text-[2.2rem] text-black max-w-[500px] md:leading-[2.6rem]"
             }
