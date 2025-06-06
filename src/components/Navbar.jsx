@@ -94,7 +94,7 @@ const Navbar = () => {
           ))}
         </menu>
         <Link
-          to={"#"}
+          to={"/contact"}
           className="uppercase bg-[var(--primary-color)] text-white font-[600] px-4 py-3 rounded-sm flex items-center gap-1 border border-[var(--primary-color)] hover:bg-transparent hover:text-[var(--primary-color)] ease-in duration-200"
         >
           get in touch <MdArrowOutward className="text-[1.2rem]" />
