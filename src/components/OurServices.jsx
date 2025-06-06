@@ -3,6 +3,7 @@ import SecHeading from "./common/SecHeading";
 import { services } from "./common/allServices";
 import { GoArrowUpRight } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 // import { HiMiniArrowLongRight } from "react-icons/hi2";
 
@@ -39,7 +40,18 @@ const OurServices = () => {
                   className={`cursor-pointer service ease-in duration-300   bg-center bg-cover ${service.bgImg} max-w-[400px] h-full`}
                 >
                   <div className="black_cover hover:bg-transparent ease-in duration-300 bg-[#000] w-full h-full">
-                    <div className="w-full h-full bg-[#000000d6] px-8 py-10 flex flex-col items-start gap-4">
+                    <motion.div
+                      initial={{ y: 40, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{
+                        delay: 0.2,
+                        y: { type: "spring", duration: 1, stiffness: 40 },
+                        opacity: { duration: 2 },
+                        ease: "easeInOut",
+                      }}
+                      viewport={{ once: true }}
+                      className="w-full h-full bg-[#000000d6] px-8 py-10 flex flex-col items-start gap-4"
+                    >
                       <img
                         src={service.icon}
                         alt="movie production"
@@ -54,7 +66,7 @@ const OurServices = () => {
                       <p className="text-[var(--neon)] capitalize flex items-center font-[600] text-[1.2rem]">
                         read more <GoArrowUpRight />
                       </p>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </Link>

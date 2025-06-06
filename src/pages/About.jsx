@@ -8,6 +8,7 @@ import { CiPlay1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import Faq from "../components/common/Faq";
 import Story from "../components/Story";
+import { motion } from "framer-motion";
 
 const trustedBrands = [
   {
@@ -56,7 +57,7 @@ const visions = [
 
 const About = () => {
   return (
-    <section className="">
+    <section className="about-page overflow-x-hidden">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
@@ -76,7 +77,18 @@ const About = () => {
             divStyle={" items-start "}
             newDivStyle={"justify-start "}
           />
-          <p className="text-[1.1rem]">
+          <motion.p
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+            className="text-[1.1rem]"
+          >
             We&apos;re a team of passionate filmmakers, writers, and creatives
             united by a shared love of storytelling and a commitment to
             excellence. Our journey began with a simple yet powerful idea: to
@@ -84,12 +96,25 @@ const About = () => {
             craft compelling stories that captivate, inspire, and transform
             audiences. We believe that film has the power to transport us to new
             worlds, challenge our perspectives, and connect us with others in
+          </motion.p>
+          <motion.p
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+            className="text-[1.1rem]"
+          >
             meaningful ways. Our team is comprised of experienced professionals
             with a deep understanding of the film industry. From writers and
             directors to producers and editors, each member brings their unique
             expertise and passion to every project. We&apos;re a collaborative
             team that thrives on creativity, innovation, and mutual respect.
-          </p>
+          </motion.p>
           {/* <Link
             to={"#"}
             className="bg-[var(--primary-color)] text-[var(--secondary-color)] px-7 py-3"
@@ -100,12 +125,30 @@ const About = () => {
         </div>
 
         <div className="2pics-illus md:bottom-[70px] relative min-h-[70vh] w-full md:w-[50%]">
-          <img
+          <motion.img
+            initial={{ x: -40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247673/pyrite/IMG_0235_cnjfdq.webp"
             alt="pyrite classics"
             className=" rounded-xl w-[70%] absolute top-0 left-0  h-[80%] object-cover z-[4] shadow-2xl"
           />
-          <img
+          <motion.img
+            initial={{ x: 40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1720833104/pyrite/pyritePic4_nym5nn.jpg"
             alt="pyrite classics"
             className=" rounded-xl w-[70%] bottom-[-10%] absolute h-[80%] right-0 object-cover shadow-2xl"
@@ -140,7 +183,18 @@ const About = () => {
               divStyle={" items-start text-left"}
               newDivStyle={"justify-center "}
             />
-            <p className="text-[1.1rem]">
+            <motion.p
+              initial={{ x: 40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+              className="text-[1.1rem]"
+            >
               Lights, camera, values! We live and breathe storytelling magic,
               infuse creativity into every scene, and pledge an unwavering
               dedication to cinematic excellence. Crafting films that linger in
@@ -152,8 +206,18 @@ const About = () => {
               We&apos;re passionate about storytelling and dedicated to bringing
               your vision to life. Our team of experienced professionals is
               driven by a shared love of cinema and a commitment to excellence.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+            >
               With years of experience in the film industry, our team has
               developed a deep understanding of what makes a great story.
               We&apos;ll work with you to develop a compelling narrative,
@@ -162,7 +226,7 @@ const About = () => {
               members, but also with our clients. We&apos;ll work closely with
               you to understand your vision, goals, and objectives, ensuring
               that our final product meets your expectations.
-            </p>
+            </motion.p>
           </div>
           <img
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1719883208/pyrite/project_11_xaw9z8.jpg"
@@ -177,11 +241,48 @@ const About = () => {
               key={vision.title}
               className="vision border border-transparent ease-in duration-300 hover:border-[var(--primary-color)]  p-8 py-3 max-w-[600px]  shadow-xl flex flex-col items-center justify-center text-center gap-3 mx-auto rounded-xl"
             >
-              <span className="icon bg-[var(--primary-color)] text-[1.7rem] p-4 rounded-full text-white">
+              <motion.span
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
+                className="icon bg-[var(--primary-color)] text-[1.7rem] p-4 rounded-full text-white"
+              >
                 {vision.icon}
-              </span>
-              <h2 className="text-[1.7rem] font-[700]">{vision.title}</h2>
-              <p className="text-[1.1rem] font-[400]">{vision.text}</p>
+              </motion.span>
+              <motion.h2
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
+                className="text-[1.7rem] font-[700]"
+              >
+                {vision.title}
+              </motion.h2>
+              <motion.p
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
+                className="text-[1.1rem] font-[400]"
+              >
+                {vision.text}
+              </motion.p>
             </div>
           ))}
         </div>

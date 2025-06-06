@@ -46,7 +46,7 @@ const HeroCard = () => {
       modules={[Autoplay]}
       loop={true}
       autoplay={{
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       }}
       className="mySwiper  imagesContainer w-full md:w-full "
@@ -57,16 +57,49 @@ const HeroCard = () => {
             className={`hero text-white  flex flex-col items-start justify-center gap-3  min-h-[90vh] bg-no-repeat bg-cover ${heroCard.bgPic}`}
           >
             <div className="cover min-h-[90vh] p-5 px-8 gap-3 md:gap-6 flex flex-col items-start justify-center">
-              <h3 className="text-[var(--primary-color)] uppercase md:flex-row flex-col w-full flex items-start md:items-center gap-4 font-bold text-[1rem] md:max-w-[600px] md:text-[1.1rem] md:w-full">
+              <motion.h3
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                // viewport={{ once: true }}
+                className="text-[var(--primary-color)] uppercase md:flex-row flex-col w-full flex items-start md:items-center gap-4 font-bold text-[1rem] md:max-w-[600px] md:text-[1.1rem] md:w-full"
+              >
                 <hr className="bg-[var(--primary-color)] border-none h-[1px] w-[13%]" />{" "}
                 {heroCard.subtitle}
-              </h3>
-              <h1 className="text-[1.9rem] capitalize font-bold md: max-w-[450px] md:text-[3.2rem] md:leading-[3.6rem] lg:leading-[4.6rem] lg:text-[4.1rem] lg:max-w-[760px] ">
+              </motion.h3>
+              <motion.h1
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                // viewport={{ once: true }}
+                className="text-[1.9rem] capitalize font-bold md: max-w-[450px] md:text-[3.2rem] md:leading-[3.6rem] lg:leading-[4.6rem] lg:text-[4.1rem] lg:max-w-[760px] "
+              >
                 {heroCard.h1}
-              </h1>
-              <p className="text-[1rem] font-semibold md: max-w-[450px] md:text-[1.2rem] md:max-w-[600px]">
+              </motion.h1>
+              <motion.p
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                // viewport={{ once: true }}
+                className="text-[1rem] font-semibold md: max-w-[450px] md:text-[1.2rem] md:max-w-[600px]"
+              >
                 {heroCard.desc}
-              </p>
+              </motion.p>
               <div className="flex items-center justify-start w-full gap-6 mt-3 md: max-w-[600px] md:text-[]">
                 <Link
                   to={heroCard.buttons[0]?.button1Link}

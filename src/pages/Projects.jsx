@@ -3,6 +3,7 @@ import PageHead from "../components/common/PageHead";
 import SecHeading from "../components/common/SecHeading";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { projects } from "../components/common/projects";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   //   const navigate = useNavigate();
@@ -47,7 +48,18 @@ const Projects = () => {
               >
                 details <HiOutlineArrowLongRight />
               </Link> */}
-                <div className="flex flex-col items-start gap-3 text-white">
+                <motion.div
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="flex flex-col items-start gap-3 text-white"
+                >
                   <Link
                     to={`/projects/${project.name
                       .replaceAll(" ", "-")
@@ -68,7 +80,7 @@ const Projects = () => {
                   >
                     see more <HiOutlineArrowLongRight />
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
           ))}

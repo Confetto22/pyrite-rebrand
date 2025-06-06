@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const SecHeading = ({
   title,
   heading,
@@ -7,7 +9,18 @@ const SecHeading = ({
   newDivStyle,
 }) => {
   return (
-    <div className={`flex flex-col gap-4 ${divStyle}`}>
+    <motion.div
+      initial={{ y: 40, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        y: { type: "spring", duration: 1, stiffness: 40 },
+        opacity: { duration: 2 },
+        ease: "easeInOut",
+      }}
+      viewport={{ once: true }}
+      className={`flex flex-col gap-4 ${divStyle}`}
+    >
       <div
         className={`flex items-center w-full  gap-4 font-bold uppercase ${newDivStyle}`}
       >
@@ -21,7 +34,7 @@ const SecHeading = ({
       >
         {heading}
       </h2>
-    </div>
+    </motion.div>
   );
 };
 

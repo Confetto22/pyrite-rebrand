@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import PageHead from "../components/common/PageHead";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
@@ -63,12 +64,49 @@ const Contact = () => {
               key={card.name}
               className="flex items-center gap-1 "
             >
-              <span className="text-[1.6rem] p-4 rounded-full text-[var(--secondary-color)] bg-[var(--primary-color)]">
+              <motion.span
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", duration: 1, stiffness: 40 },
+                  opacity: { duration: 2 },
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
+                className="text-[1.6rem] p-4 rounded-full text-[var(--secondary-color)] bg-[var(--primary-color)]"
+              >
                 {card.icon}
-              </span>
+              </motion.span>
               <div className="text-[1.5rem] font-[600]">
-                <h2 className="">{card.name}</h2>
-                <p className="text-[1.1rem] font-[300]">{card.value}</p>
+                <motion.h2
+                  initial={{ x: 40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className=""
+                >
+                  {card.name}
+                </motion.h2>
+                <motion.p
+                  initial={{ x: -40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="text-[1.1rem] font-[300]"
+                >
+                  {card.value}
+                </motion.p>
               </div>
             </Link>
           ))}

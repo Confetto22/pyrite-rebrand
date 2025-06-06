@@ -9,8 +9,9 @@ import OurServices from "../components/OurServices";
 import OurProjects from "../components/OurProjects";
 import Testimonials from "../components/Testimonials";
 import Marquee from "../components/common/marquee/Marquee";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ChooseUs from "../components/ChooseUs";
+import { motion } from "framer-motion";
 // import LetsWork from "../components/common/LetsWork";
 
 const countUpValues = [
@@ -61,7 +62,7 @@ const trustedBrands = [
 
 const Home = () => {
   return (
-    <section className=" homepage text-black">
+    <section className=" homepage text-black overflow-x-hidden">
       <HeroCard />
       <section className="home_about  flex flex-col md:flex-row md:items-center gap-8 lg:gap-12 lg:flex-row  items-start lg:items-center  p-4 py-16  lg:px-[3rem] ">
         <div className="about_text max-w-[600px] lg:max-w-[50%] flex flex-col items-start lg:justify-between gap-4 lg:w-[50%] ">
@@ -80,7 +81,18 @@ const Home = () => {
                 key={value.name}
                 className="countup flex flex-col gap-2 bg-[var(--secondary-color)] text-[white] p-4 pt-6 items-center justify-center"
               >
-                <p className="flex items-center gap-1  text-base text-center ">
+                <motion.p
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-1  text-base text-center "
+                >
                   <span className="font-bold text-[3rem] ">
                     <CountUp
                       end={value.value}
@@ -92,10 +104,21 @@ const Home = () => {
                     />
                   </span>
                   <sup className="font-bold text-[1.7rem]  ">+</sup>
-                </p>
-                <p className="capitalize font-light  text-center ">
+                </motion.p>
+                <motion.p
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="capitalize font-light  text-center "
+                >
                   {value.name}
-                </p>
+                </motion.p>
               </div>
             ))}
           </div>
@@ -145,16 +168,38 @@ const Home = () => {
             }
             divStyle={""}
           />
-          <p className="font-bold text-[1.3rem] leading-7 md:text-[1.6rem] ">
+          <motion.p
+            initial={{ x: -40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+            className="font-bold text-[1.3rem] leading-7 md:text-[1.6rem] "
+          >
             Our video production company is here to help you create stunning
             images from start to finish.
-          </p>
-          <p>
+          </motion.p>
+
+          <motion.p
+            initial={{ x: 40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", duration: 1, stiffness: 40 },
+              opacity: { duration: 2 },
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+          >
             Proin et magna blandit arcu pellentesque scelerisque sit amet a
             sapien. Aenean purus nunc, cursus in ante in, vehicula facilisis
             dui. Integer consequat consectetur est id blandit. Proin et magna
             blandit arcu pellentesque scelerisque sit amet a sapien.
-          </p>
+          </motion.p>
           {/* <Button refLink={"#"} btStyle={"bg-[var(--primary-color)] "}>
             get started
           </Button> */}

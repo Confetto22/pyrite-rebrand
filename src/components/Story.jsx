@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SecHeading from "./common/SecHeading";
 
 const storyValues = [
@@ -44,10 +45,34 @@ const Story = () => {
           <div className="allStories flex flex-col gap-5">
             {storyValues.map((story) => (
               <div key={story.title}>
-                <h2 className="capitalize font-[700] text-[1.3rem] md:text-[1.6rem] text-[#282828]">
+                <motion.h2
+                  initial={{ x: -40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="capitalize font-[700] text-[1.3rem] md:text-[1.6rem] text-[#282828]"
+                >
                   {story.title}
-                </h2>
-                <p className="text-[#767676]">{story.text}</p>
+                </motion.h2>
+                <motion.p
+                  initial={{ x: 40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="text-[#767676]"
+                >
+                  {story.text}
+                </motion.p>
               </div>
             ))}
           </div>

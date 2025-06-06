@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { services } from "../components/common/allServices";
 import PageHead from "../components/common/PageHead";
 import { GiCheckMark } from "react-icons/gi";
+import { motion } from "framer-motion";
 
 const formInputs = [
   {
@@ -64,27 +65,104 @@ const ServiceDetail = () => {
             alt="pyrite classics"
             className="aspect-[14/8] object-cover object-center"
           />
+
           <div className="flex flex-col gap-9">
-            <h2 className="">{filterServices[0].name}</h2>
-            <p>{filterServices[0].desc}</p>
+            <motion.h2
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+              className=""
+            >
+              {filterServices[0].name}
+            </motion.h2>
+            <motion.p
+              initial={{ x: 40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+            >
+              {filterServices[0].desc}
+            </motion.p>
             <div className="service_illus grid grid-cols-2 gap-4">
               {filterServices[0].more.pics.map((pic) => (
-                <img src={pic} alt="pyrite classics" className="" key={pic} />
+                <motion.img
+                  initial={{ y: -40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  src={pic}
+                  alt="pyrite classics"
+                  className=""
+                  key={pic}
+                />
               ))}
             </div>
           </div>
           <div className="flex flex-col gap-3">
-            <h2 className="">why choose us for this service?</h2>
-            <p>{filterServices[0].more.whyChoose}</p>
+            <motion.h2
+              initial={{ x: 40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+              className=""
+            >
+              why choose us for this service?
+            </motion.h2>
+            <motion.p
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+            >
+              {filterServices[0].more.whyChoose}
+            </motion.p>
             {filterServices[0].listItems && (
               <ul className="flex flex-col items-start gap-4 mt-8">
                 {filterServices[0].listItems.map((list) => (
-                  <li key={list} className="flex items-start font-[600] gap-1">
+                  <motion.li
+                    initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                      delay: 0.2,
+                      y: { type: "spring", duration: 1, stiffness: 40 },
+                      opacity: { duration: 2 },
+                      ease: "easeInOut",
+                    }}
+                    viewport={{ once: true }}
+                    key={list}
+                    className="flex items-start font-[600] gap-1"
+                  >
                     <span>
                       <GiCheckMark className="text-[var(--primary-color)]" />
                     </span>
                     {list}
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             )}

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ChooseUs = () => {
   const chooseCards = [
     {
@@ -26,22 +28,44 @@ const ChooseUs = () => {
       <section className="chooseUs bg-[var(--bg-color)] py-24 md:flex md:flex-row md:items-center md:justify-between">
         <div className="chooseUs_head bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247960/pyrite/Asset1_qx7hq2.jpg')] bg-cover bg-center rounded-r-[30%] md:rounded-r-[50%] md:min-h-[80vh] min-h-60vh] md:w-[50%]">
           <div className="chooseUs_cover min-h-[60vh] w-full h-full bg-[#000000ab] p-8 flex flex-col justify-center gap-4 rounded-r-[30%] md:rounded-r-[50%] md:min-h-[80vh]">
-            <div className="subheading_dets flex flex-col gap-4">
-              <p className="subheading_headtext text-[var(--primary-color)] uppercase text-[1rem] ">
+            <motion.div
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+              className="subheading_dets flex flex-col gap-4"
+            >
+              <h3 className="subheading_headtext text-[var(--primary-color)] uppercase text-[1rem] ">
                 {" "}
                 why choose us{" "}
-              </p>
+              </h3>
               <p className="subheading_introtext text-white text-2xl capitalize md:text-4xl md:max-w-[500px]">
                 We build a solid foundation to achieve extraordinary
                 achievements
               </p>
-            </div>
-            <p className="text-gray-300">
+            </motion.div>
+            <motion.p
+              initial={{ x: 40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", duration: 1, stiffness: 40 },
+                opacity: { duration: 2 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true }}
+              className="text-gray-300"
+            >
               We strive for perfection and our main focus is creating the best
               creative plan to help you or your business. That is why we work
               closely with our clients from beginning until end, making sure
               your ideas are in safe and capable hands from concept to delivery.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="chooseUs_cards md:w-[50%] flex flex-col gap-4 py-8">
@@ -51,17 +75,51 @@ const ChooseUs = () => {
               className="chooseUs_card flex flex-row  items-center justify-center gap-4 px-4"
             >
               <div className="chooseCard_imgbox bg-[var(--neon)] p-4 rounded-full">
-                <img
+                <motion.img
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
                   src={card.icon}
                   alt="pyrite classics"
                   className="chooseCard_img max-w-[30px]"
                 />
               </div>
               <div className="chooseCard_text w-5/6 flex flex-col gap-1 text-white">
-                <h2 className="text-[1.4rem] capitalize font-[600]">
+                <motion.h2
+                  initial={{ x: -40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="text-[1.4rem] capitalize font-[600]"
+                >
                   {card.title}
-                </h2>
-                <p className="text-gray-300 text-[1rem]"> {card.desc} </p>
+                </motion.h2>
+                <motion.p
+                  initial={{ x: 40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="text-gray-300 text-[1rem]"
+                >
+                  {" "}
+                  {card.desc}{" "}
+                </motion.p>
               </div>
             </div>
           ))}
