@@ -52,22 +52,17 @@ const Projects = () => {
                     to={`/projects/${project.name
                       .replaceAll(" ", "-")
                       .toLowerCase()}`}
-                    className="capitalize font-semibold text-[#E3F81F] text-[1.5rem] cursor-pointer"
+                    className="capitalize font-semibold text-[var(--primary-color)] text-[1.5rem] cursor-pointer"
                   >
                     {project.name} - {project.year}
                   </Link>
-                  <p className="text-[var(--secondary-color)]">
+                  <p className="text-white">
                     {/* {project.desc[0].slice(0, 100)}... */}
                     {project.desc.pargagraph1.slice(0, 100)}...
                   </p>
-                  <Link
-                    to={`/projects/${project.name
-                      .replaceAll(" ", "-")
-                      .toLowerCase()}`}
-                    className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[#E3F81F] font-semibold  "
-                  >
+                  <p className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  ">
                     see more <HiOutlineArrowLongRight />
-                  </Link>
+                  </p>
                 </div>
               </div>
             </div>

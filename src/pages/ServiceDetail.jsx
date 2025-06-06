@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { services } from "../components/common/allServices";
 import PageHead from "../components/common/PageHead";
+import { GiCheckMark } from "react-icons/gi";
 
 const formInputs = [
   {
@@ -52,16 +53,18 @@ const ServiceDetail = () => {
         // currProject={'name'}
         currPage={filterServices[0].name}
         prevPage={"Services"}
-        prevLink={"/"}
+        prevLink={"/services"}
+        // currProject={filterServices[0].name}
+        intro={filterServices[0].intro}
       />
-      <section className="service_detail px-7 py-16 flex flex-col gap-12 md:flex-row md:items-start">
+      <section className="service_detail px-7 py-24 flex flex-col gap-12 md:flex-row md:items-start">
         <div className="service_text md:w-[55%] flex flex-col gap-12">
           <img
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg"
             alt="pyrite classics"
             className="aspect-[14/8] object-cover object-center"
           />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-9">
             <h2 className="">{filterServices[0].name}</h2>
             <p>{filterServices[0].desc}</p>
             <div className="service_illus grid grid-cols-2 gap-4">
@@ -73,9 +76,21 @@ const ServiceDetail = () => {
           <div className="flex flex-col gap-3">
             <h2 className="">why choose us for this service?</h2>
             <p>{filterServices[0].more.whyChoose}</p>
+            {filterServices[0].listItems && (
+              <ul className="flex flex-col items-start gap-4 mt-8">
+                {filterServices[0].listItems.map((list) => (
+                  <li key={list} className="flex items-start font-[600] gap-1">
+                    <span>
+                      <GiCheckMark className="text-[var(--primary-color)]" />
+                    </span>
+                    {list}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
-        <aside className="service_card md:w-[40%] md:sticky md:top-[10px] max-w-[500px] rounded-md bg-[#fcfeff] px-6 py-8 flex flex-col justify-center min-h-[60vh] shadow-2xl border ease-in duration-300 hover:translate-y-[15px] border-[#b5b5b5] border-transparent hover:border-[var(--primary-color)]">
+        <aside className="service_card md:w-[40%] md:sticky md:top-[10px] max-w-[500px] rounded-md bg-[#fcfcff] px-6 py-8 flex flex-col justify-center min-h-[60vh] shadow-2xl  ease-in duration-300 hover:translate-y-[15px] border-2 border-[#b5b5b5] border-transparent hover:border-[var(--primary-color)]">
           <h2 className="mb-5">Get In Touch</h2>
           <form className="get-in-touch  flex flex-col gap-3">
             {formInputs.map((formInput) => (

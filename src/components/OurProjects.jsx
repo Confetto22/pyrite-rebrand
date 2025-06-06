@@ -24,7 +24,7 @@ const OurProjects = () => {
         />
         <Link
           to={"/projects"}
-          className="bg-[var(--primary-color)] px-7 py-3 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[80%] border-2 border-[var(--primary-color)] hover:bg-transparent hover:text-[var(--primary-color)] ease-in duration-300"
+          className="bg-[var(--secondary-color)] px-7 py-3 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[80%] border-2 border-[var(--secondary-color)] hover:bg-transparent hover:text-[var(--secondary-color)] ease-in duration-300"
         >
           view more
         </Link>
@@ -50,22 +50,17 @@ const OurProjects = () => {
                   to={`/projects/${project.name
                     .replaceAll(" ", "-")
                     .toLowerCase()}`}
-                  className="capitalize font-semibold text-[#E3F81F] text-[1.5rem] cursor-pointer"
+                  className="capitalize font-semibold text-[var(--primary-color)] text-[1.5rem] cursor-pointer"
                 >
                   {project.name} - {project.year}
                 </Link>
-                <p className="text-[var(--secondary-color)]">
+                <p className="text-white">
                   {/* {project.desc[0].slice(0, 100)}... */}
                   {project.desc.pargagraph1.slice(0, 100)}...
                 </p>
-                <Link
-                  to={`/projects/${project.name
-                    .replaceAll(" ", "-")
-                    .toLowerCase()}`}
-                  className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[#E3F81F] font-semibold  "
-                >
+                <p className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  ">
                   see more <HiOutlineArrowLongRight />
-                </Link>
+                </p>
               </div>
             </div>
           </div>

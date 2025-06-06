@@ -1,50 +1,48 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { FiPhone } from "react-icons/fi";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+// import { FiPhone } from "react-icons/fi";
+// import { FaFacebookF } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
+import { MdArrowOutward } from "react-icons/md";
 
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
 // import { IoClose } from "react-icons/io5";
 
-import { IoClose } from "react-icons/io5";
-import { useState } from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+// import { useState } from "react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const navtopSocials = [
-    {
-      name: "facebook",
-      icon: <FaFacebookF />,
-      refLink: "#",
-    },
-    {
-      name: "instagram",
-      icon: <FaInstagram />,
-      refLink: "#",
-    },
-    {
-      name: "youtube",
-      icon: <FaYoutube />,
-      refLink: "#",
-    },
-    {
-      name: "whatsapp",
-      icon: <FaWhatsapp />,
-      refLink: "#",
-    },
-  ];
+  // const [isOpen, setIsOpen] = useState(false);
+  // const navtopSocials = [
+  //   {
+  //     name: "facebook",
+  //     icon: <FaFacebookF />,
+  //     refLink: "#",
+  //   },
+  //   {
+  //     name: "instagram",
+  //     icon: <FaInstagram />,
+  //     refLink: "#",
+  //   },
+  //   {
+  //     name: "youtube",
+  //     icon: <FaYoutube />,
+  //     refLink: "#",
+  //   },
+  //   {
+  //     name: "whatsapp",
+  //     icon: <FaWhatsapp />,
+  //     refLink: "#",
+  //   },
+  // ];
 
   const pageLinks = [
     {
@@ -60,18 +58,18 @@ const Navbar = () => {
       refLink: "/services",
     },
     {
-      name: "journal",
-      refLink: "#",
+      name: "projects",
+      refLink: "/projects",
     },
     {
       name: "contact",
-      refLink: "#",
+      refLink: "/contact",
     },
   ];
 
   const pageLocation = useLocation();
   return (
-    <nav className="navbar px-5 md:px-8 py-5  flex items-center justify-between">
+    <nav className="navbar px-5 md:px-8 py-5  flex items-center justify-between ">
       <Link to={"/"}>
         <img
           src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1749147676/pyrite/jilova-logo-removebg-preview_mq5pee.png"
@@ -79,13 +77,29 @@ const Navbar = () => {
           className="max-w-[100px]"
         />
       </Link>
-      <menu className="md:flex items-center gap-4 uppercase text-[1.1rem] font-[500] hidden">
-        {pageLinks.map((link) => (
-          <Link to={link.refLink} key={link.name}>
-            {link.name}
-          </Link>
-        ))}
-      </menu>
+      <div className="md:flex hidden items-center md:gap-[3rem] lg:gap-[7rem] ">
+        <menu className="flex items-center gap-4 uppercase text-[1.1rem] font-[500] ">
+          {pageLinks.map((link) => (
+            <Link
+              to={link.refLink}
+              key={link.name}
+              className={`${
+                pageLocation.pathname === link.refLink
+                  ? "text-[var(--secondary-color)] border-b-2 border-b-[var(--secondary-color)] "
+                  : ""
+              } hover:text-[var(--secondary-color)]   ease-in duration-300   `}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </menu>
+        <Link
+          to={"#"}
+          className="uppercase bg-[var(--primary-color)] text-white font-[600] px-4 py-3 rounded-sm flex items-center gap-1 border border-[var(--primary-color)] hover:bg-transparent hover:text-[var(--primary-color)] ease-in duration-200"
+        >
+          get in touch <MdArrowOutward className="text-[1.2rem]" />
+        </Link>
+      </div>
 
       <Sheet>
         <SheetTrigger asChild>

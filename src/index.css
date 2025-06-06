@@ -5,16 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --primary-color: #d54b2b;
   --secondary-color: #82869a;
   --neon: #e3f81f;
   --bg-color: #11131c;
   --heading-font: "Roboto Condensed", serif;
   --main-font: "Source Sans 3", serif;
+} */
+:root {
+  --primary-color: #ffbf00;
+  --secondary-color: #11131c;
+  --neon: #e3f81f;
+  --bg-color: #11131c;
+  --heading-font: "Roboto Condensed", serif;
+  --main-font: "Source Sans 3", serif;
 }
-
-
 
 @layer base {
   :root {
@@ -71,8 +77,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

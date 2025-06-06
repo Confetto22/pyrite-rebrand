@@ -18,7 +18,7 @@ const OurServices = () => {
           />
           <div className="bg-[#00000077] w-full h-full absolute top-0"></div>
         </div>
-        <section className="px-3 pt-16 md:w-[50%] flex flex-col items-center md:items-stretch gap-4 pb-16">
+        <section className="px-3 pt-16 md:w-[50%] flex flex-col items-start md:items-stretch gap-4 pb-16">
           <SecHeading
             title={"services"}
             titleStyle={""}
@@ -39,7 +39,7 @@ const OurServices = () => {
                   className={`cursor-pointer service ease-in duration-300   bg-center bg-cover ${service.bgImg} max-w-[400px] h-full`}
                 >
                   <div className="black_cover hover:bg-transparent ease-in duration-300 bg-[#000] w-full h-full">
-                    <div className="w-full h-full bg-[#000000c3] px-8 py-10 flex flex-col items-start gap-4">
+                    <div className="w-full h-full bg-[#000000d6] px-8 py-10 flex flex-col items-start gap-4">
                       <img
                         src={service.icon}
                         alt="movie production"
@@ -48,17 +48,12 @@ const OurServices = () => {
                       <h2 className="text-white capitalize md:text-[1.4rem] font-bold">
                         {service.name}
                       </h2>
-                      <p className="text-[var(--secondary-color)]">
+                      <p className="text-white font-[300]">
                         {service.desc.slice(0, 83)}...
                       </p>
-                      <Link
-                        to={`/services/${service.name
-                          .replaceAll(" ", "-")
-                          .toLowerCase()}`}
-                        className="text-[var(--neon)] capitalize flex items-center font-[600] text-[1.2rem]"
-                      >
+                      <p className="text-[var(--neon)] capitalize flex items-center font-[600] text-[1.2rem]">
                         read more <GoArrowUpRight />
-                      </Link>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +62,7 @@ const OurServices = () => {
           </div>
           <Link
             to={`/services`}
-            className="all-services  bg-[var(--primary-color)] px-7 py-4 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[80%] border-2 border-[var(--primary-color)] hover:bg-transparent hover:text-[var(--primary-color)]"
+            className="all-services w-[60%] md:w-full  bg-[var(--secondary-color)] px-7 py-4 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[60%] md:hover:gap-[70%] border-2 border-[var(--secondary-color)] hover:bg-transparent hover:text-[var(--secondary-color)]"
           >
             All Services <FaArrowRightLong />
           </Link>

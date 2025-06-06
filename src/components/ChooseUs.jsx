@@ -3,21 +3,21 @@ const ChooseUs = () => {
     {
       title: "Expertise in visual storytelling",
       desc: "We craft visual tales that linger in your heart. Choose us for a cinematic experience like no other!",
-      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/value_12139887_a7fafn.png",
+      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/cube-notes-stack_54637_brco2g.png",
     },
     {
-      title: "Expertise in visual storytelling",
-      desc: "We craft visual tales that linger in your heart. Choose us for a cinematic experience like no other!",
-      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/value_12139887_a7fafn.png",
+      title: "Cutting-Edge Technology",
+      desc: "We blend the latest tech innovations seamlessly into our productions, ensuring your story shines brighter with every frame.",
+      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719619297/pyrite/video-camera_8474650_hwicwh.png",
     },
     {
-      title: "Expertise in visual storytelling",
-      desc: "We craft visual tales that linger in your heart. Choose us for a cinematic experience like no other!",
-      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/value_12139887_a7fafn.png",
+      title: "Diverse Portfolio of Success",
+      desc: "Our track record speaks volumes! Our diverse portfolio of success showcases our ability to bring any story to life.",
+      icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719619296/pyrite/film_7547147_qdtiuj.png",
     },
     {
-      title: "Expertise in visual storytelling",
-      desc: "We craft visual tales that linger in your heart. Choose us for a cinematic experience like no other!",
+      title: "Creative Collaboration",
+      desc: "Our passion for creative collaboration fuels every project we touch. Partner with us to turn your vision into a cinematic masterpiece where teamwork sparks magic on screen!",
       icon: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/value_12139887_a7fafn.png",
     },
   ];
@@ -25,9 +25,9 @@ const ChooseUs = () => {
     <>
       <section className="chooseUs bg-[var(--bg-color)] py-24 md:flex md:flex-row md:items-center md:justify-between">
         <div className="chooseUs_head bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247960/pyrite/Asset1_qx7hq2.jpg')] bg-cover bg-center rounded-r-[30%] md:rounded-r-[50%] md:min-h-[80vh] min-h-60vh] md:w-[50%]">
-          <div className="chooseUs_cover min-h-[60vh] w-full h-full bg-[#00000094] p-8 flex flex-col justify-center gap-4 rounded-r-[30%] md:rounded-r-[50%] md:min-h-[80vh]">
+          <div className="chooseUs_cover min-h-[60vh] w-full h-full bg-[#000000ab] p-8 flex flex-col justify-center gap-4 rounded-r-[30%] md:rounded-r-[50%] md:min-h-[80vh]">
             <div className="subheading_dets flex flex-col gap-4">
-              <p className="subheading_headtext text-gray-300 uppercase text-sm">
+              <p className="subheading_headtext text-[var(--primary-color)] uppercase text-[1rem] ">
                 {" "}
                 why choose us{" "}
               </p>
@@ -52,20 +52,16 @@ const ChooseUs = () => {
             >
               <div className="chooseCard_imgbox bg-[var(--neon)] p-4 rounded-full">
                 <img
-                  src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1719632615/pyrite/cube-notes-stack_54637_brco2g.png"
+                  src={card.icon}
                   alt="pyrite classics"
                   className="chooseCard_img max-w-[30px]"
                 />
               </div>
               <div className="chooseCard_text w-5/6 flex flex-col gap-1 text-white">
                 <h2 className="text-[1.4rem] capitalize font-[600]">
-                  Expertise in visual storytelling
+                  {card.title}
                 </h2>
-                <p className="text-gray-300 text-[1rem]">
-                  {" "}
-                  We craft visual tales that linger in your heart. Choose us for
-                  a cinematic experience like no other!{" "}
-                </p>
+                <p className="text-gray-300 text-[1rem]"> {card.desc} </p>
               </div>
             </div>
           ))}

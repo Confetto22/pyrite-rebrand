@@ -90,28 +90,28 @@ const ProjectDetail = () => {
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
         }
         currProject={name}
-        currPage={"Project Detail"}
-        prevPage={"Home"}
-        prevLink={"/"}
+        currPage={project.name}
+        prevPage={"Projects"}
+        prevLink={"/projects"}
       />
       <section className="detail_area px-8">
-        <section className="py-16 flex flex-col md:flex-row md:items-start  md:justify-around">
+        <section className="pb-16 flex flex-col gap-14 md:gap-0 md:flex-row md:items-start  md:justify-around">
           <div className="details_area  w-full text-[var(--secondary-color)] md:w-[55%]">
             <div className="flex flex-col gap-5 items-start py-16">
               <h1 className="text-black font-bold text-[1.6rem] md:text-[2rem] uppercase tracking-wide">
                 {name} - {project.year} {project.genre}
               </h1>
-              <p className="md:text-[1.1rem]  lg:text-[1.3rem] font-[500]">
+              <p className="md:text-[1.1rem]  lg:text-[1.3rem] font-[400]">
                 {project.desc.pargagraph1}
               </p>
-              <p className="md:text-[1.1rem]  lg:text-[1.3rem] font-[500]">
+              <p className="md:text-[1.1rem]  lg:text-[1.3rem] font-[400]">
                 {project.desc.pargagraph2}
               </p>
               <div className="project_banner relative  w-full ">
                 <img
                   src={project.slideshow[0]}
                   alt="pyrite classics"
-                  className="w-full aspect-[19/7] object-cover object-center"
+                  className="w-full aspect-[18/10] md:aspect-[19/7] object-cover object-center"
                 />
                 <div className=" bg-[#000000ab] absolute w-full h-full top-0 left-0 flex items-center justify-center">
                   <FaCirclePlay className="text-[2.4rem] md:text-[4.4rem] text-white" />
@@ -132,7 +132,7 @@ const ProjectDetail = () => {
           </div>
 
           <aside className="flex flex-col gap-12 md:w-[40%] shadow-2xl rounded-md md:sticky md:top-3">
-            <div className="detail_card rounded-sm text-white bg-[#0C0E18]  py-8 max-w-[500px] md:max-w-full mx-auto  p-4 flex flex-col gap-7 items-center w-full">
+            <div className="detail_card rounded-sm text-white bg-[var(--secondary-color)]  py-8 max-w-[500px] md:max-w-full mx-auto  p-4 flex flex-col gap-7 items-center w-full">
               <p className="font-bold text-[1.5rem] uppercase text-center">
                 project detail
               </p>
@@ -146,15 +146,13 @@ const ProjectDetail = () => {
                       className="flex  gap-2  justify-start  items-center  "
                       key={detail.name}
                     >
-                      <span className="text-[1.7rem] text-[var(--neon)]">
+                      <span className="text-[1.7rem] text-[var(--primary-color)]">
                         <i className={detail.icon}></i>
                       </span>{" "}
                       {detail.name}:
                     </p>
 
-                    <p className="text-[var(--secondary-color)]   ">
-                      {detail.value}
-                    </p>
+                    <p className="text-white   ">{detail.value}</p>
                   </div>
                 ))}
               </div>

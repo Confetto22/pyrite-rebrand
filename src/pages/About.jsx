@@ -6,6 +6,8 @@ import SecHeading from "../components/common/SecHeading";
 import Marquee from "../components/common/marquee/Marquee";
 import { CiPlay1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import Faq from "../components/common/Faq";
+import Story from "../components/Story";
 
 const trustedBrands = [
   {
@@ -75,22 +77,26 @@ const About = () => {
             newDivStyle={"justify-start "}
           />
           <p className="text-[1.1rem]">
-            But we must orem ipsum dolor sit amet consectetur adipisicing
-            elitsed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim adeste minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip exea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Sed ut perspiciatis unde omnis iste natus error sit
+            We&apos;re a team of passionate filmmakers, writers, and creatives
+            united by a shared love of storytelling and a commitment to
+            excellence. Our journey began with a simple yet powerful idea: to
+            bring people together through the art of cinema. Our mission is to
+            craft compelling stories that captivate, inspire, and transform
+            audiences. We believe that film has the power to transport us to new
+            worlds, challenge our perspectives, and connect us with others in
+            meaningful ways. Our team is comprised of experienced professionals
+            with a deep understanding of the film industry. From writers and
+            directors to producers and editors, each member brings their unique
+            expertise and passion to every project. We&apos;re a collaborative
+            team that thrives on creativity, innovation, and mutual respect.
           </p>
-          <Link
+          {/* <Link
             to={"#"}
-            className="bg-[var(--primary-color)] text-white px-7 py-3"
+            className="bg-[var(--primary-color)] text-[var(--secondary-color)] px-7 py-3"
           >
             {" "}
             Read More{" "}
-          </Link>
+          </Link> */}
         </div>
 
         <div className="2pics-illus md:bottom-[70px] relative min-h-[70vh] w-full md:w-[50%]">
@@ -108,16 +114,19 @@ const About = () => {
       </section>
       <section className="latestVid  bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719609864/pyrite/raer-view-of-young-videographer-in-black-casualwear-giving-advice-to-models-min_beinbx.webp')] bg-center bg-cover">
         <div className="latestVid-cover min-h-[70vh] bg-[#000000a6] text-white p-7 flex flex-col gap-8 items-center justify-center">
-          <span className="bg-[var(--primary-color)] p-6 md:p-10 text-[1.8rem] rounded-full flex items-center justify-center ease-in duration-300 hover:text-[var(--primary-color)] hover:bg-white cursor-pointer">
+          <Link
+            to={"#"}
+            className="bg-[var(--primary-color)] p-6 md:p-10 text-[1.8rem] rounded-full flex items-center justify-center ease-in duration-300 hover:text-[var(--primary-color)] hover:bg-white cursor-pointer"
+          >
             <CiPlay1 className="" />
-          </span>
+          </Link>
           <p className="capitalize text-[1.5rem] md:text-[2.2rem] font-[700]">
             watch our latest video
           </p>
         </div>
       </section>
       <div className="ourValue bg- px-8 pt-24 flex flex-col gap-[3rem] ">
-        <div className="flex flex-col md:gap-[4rem] md:flex-row-reverse items-start md:items-center  gap-8">
+        <div className="flex flex-col md:gap-[4rem] md:flex-row-reverse items-start md:items-stretch  gap-8">
           <div className="text flex flex-col justify-center  h-full gap-6">
             <SecHeading
               title={"our value"}
@@ -126,7 +135,7 @@ const About = () => {
                 "We make videos using the latest equipment supported by experts in the editing field"
               }
               headingStyle={
-                "md:text-[2.2rem] text-black max-w-[500px] md:leading-[2.4rem]"
+                "md:text-[2.2rem] text-black max-w-[500px] md:leading-[2.6rem]"
               }
               divStyle={" items-start text-left"}
               newDivStyle={"justify-center "}
@@ -135,7 +144,24 @@ const About = () => {
               Lights, camera, values! We live and breathe storytelling magic,
               infuse creativity into every scene, and pledge an unwavering
               dedication to cinematic excellence. Crafting films that linger in
-              hearts long after the screen fades to black!
+              hearts long after the screen fades to black! At Pyrite Classics,
+              we believe that exceptional storytelling has the power to
+              captivate, inspire, and transform audiences. Our team is dedicated
+              to delivering high-quality movie productions that exceed our
+              clients&apos; expectations. Here&apos;s what sets us apart.
+              We&apos;re passionate about storytelling and dedicated to bringing
+              your vision to life. Our team of experienced professionals is
+              driven by a shared love of cinema and a commitment to excellence.
+            </p>
+            <p>
+              With years of experience in the film industry, our team has
+              developed a deep understanding of what makes a great story.
+              We&apos;ll work with you to develop a compelling narrative,
+              memorable characters, and a visually stunning cinematic
+              experience. We believe in collaboration, not just between our team
+              members, but also with our clients. We&apos;ll work closely with
+              you to understand your vision, goals, and objectives, ensuring
+              that our final product meets your expectations.
             </p>
           </div>
           <img
@@ -161,6 +187,8 @@ const About = () => {
         </div>
       </div>
 
+      <Story />
+
       <section className="trusted my-24 bg-[#0000006b]  bg-cover bg-center   min-h-[50vh] py-7 flex flex-col items-center justify-evenly">
         <h2 className="text-center capitalize px-5 text-[white] text-[2rem] font-semibold">
           Trusted by many clients
@@ -176,6 +204,7 @@ const About = () => {
           ))}
         </Marquee>
       </section>
+      <Faq />
     </section>
   );
 };

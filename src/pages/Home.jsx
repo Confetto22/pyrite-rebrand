@@ -78,7 +78,7 @@ const Home = () => {
             {countUpValues.map((value) => (
               <div
                 key={value.name}
-                className="countup flex flex-col gap-2 bg-[var(--primary-color)] text-white p-4 pt-6 items-center justify-center"
+                className="countup flex flex-col gap-2 bg-[var(--secondary-color)] text-[white] p-4 pt-6 items-center justify-center"
               >
                 <p className="flex items-center gap-1  text-base text-center ">
                   <span className="font-bold text-[3rem] ">
@@ -109,7 +109,9 @@ const Home = () => {
             expertise, international reach, proven results and a relentless
             energy to push your business further.
           </p>
-          <Button refLink={"#"}>learn more</Button>
+          <Button refLink={"/about-us"} btStyle={"bg-[var(--secondary-color)]"}>
+            learn more
+          </Button>
           {/* <Link
             to={"#"}
             className="bg-[var(--primary-color)] rounded-sm px-5 py-2 uppercase font-semibold hover:-translate-y-2 ease-in duration-200 text-white"
@@ -125,7 +127,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="cinematography bg-[var(--bg-color)] py-16 p-6 flex flex-col md:flex-row md:gap-8 items-start gap-5 md:items-center">
+      <section className="cinematography bg-[var(--bg-color)] py-24 px-6 flex flex-col md:flex-row md:gap-8 items-start gap-5 md:items-center">
         <div className="cinema_img  md:w-[50%] overflow-hidden max-w-[500px] rounded-lg md:max-w-[50%]">
           <img
             src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247263/pyrite/IMG_9331_weto6p.jpg"
@@ -153,14 +155,16 @@ const Home = () => {
             dui. Integer consequat consectetur est id blandit. Proin et magna
             blandit arcu pellentesque scelerisque sit amet a sapien.
           </p>
-          <Button refLink={"#"}>get started</Button>
+          {/* <Button refLink={"#"} btStyle={"bg-[var(--primary-color)] "}>
+            get started
+          </Button> */}
         </div>
       </section>
       <OurServices />
       <OurProjects />
       <ChooseUs />
       <section className="partner bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738977282/pyrite/film-industry-4GJLQAD_z3laxr.jpg')] bg-cover bg-center">
-        <div className=" min-h-[70vh] bg-[#000000ad] flex flex-col items-center justify-center text-white text-center p-8 gap-5">
+        <div className=" min-h-[70vh] bg-[#000000c4] flex flex-col items-center justify-center text-white text-center p-8 gap-5">
           <h2 className="font-[800] text-[2rem] capitalize max-w-[700px]">
             Partner with Pyrite Today! Contact Us for a Cinematic Journey.
           </h2>
@@ -168,15 +172,15 @@ const Home = () => {
             Explore exciting partnership opportunities that bring stories to
             life. Let&apos;s create magic together in the world of film making.
           </p>
-          <Link
+          {/* <Link
             to={"#"}
             className="uppercase bg-[var(--primary-color)] px-4 py-2 font-[700]"
           >
             case study
-          </Link>
+          </Link> */}
         </div>
       </section>
-      <section className="trusted my-24  bg-cover bg-center   min-h-[30vh] py-7 flex flex-col items-center justify-evenly">
+      <section className="trusted my-24  bg-[#0000008e]   min-h-[30vh] py-7 flex flex-col items-center justify-evenly">
         <p className="text-center px-5 text-[white] text-[2rem] font-semibold">
           Trusted by many clients
         </p>

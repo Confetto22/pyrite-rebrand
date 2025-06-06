@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:service" element={<ServiceDetail />} />
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/:service" element={<ServiceDetail />} /> */}
       </Routes>
 
