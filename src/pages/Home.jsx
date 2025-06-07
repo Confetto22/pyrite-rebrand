@@ -71,7 +71,7 @@ const Home = () => {
             titleStyle={""}
             heading={"We Are a Team of Passionate Filmmakers"}
             headingStyle={
-              "md:text-[3rem] text-black max-w-[500px]  lg:text-[4rem]"
+              "md:text-[2.6rem] text-black max-w-[500px]  lg:text-[3.2rem]"
             }
             divStyle={""}
           />
@@ -164,7 +164,7 @@ const Home = () => {
             titleStyle={""}
             heading={"Cinematography and Film Production"}
             headingStyle={
-              "md:text-[3rem] max-w-[500px]  lg:text-[4rem] text-white"
+              "md:text-[2.6rem] max-w-[500px]  lg:text-[3.2rem] text-white"
             }
             divStyle={""}
           />

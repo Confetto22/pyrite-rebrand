@@ -20,7 +20,7 @@ const Services = () => {
           "Your Creative Roadmap Starts Here. We support you from creative inception to final production."
         }
       />
-      <div className="px-8 pt-24 flex flex-col items-start gap-4">
+      <div className="px-8 pt-24 flex flex-col items-center text-center gap-4">
         <motion.h2
           initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -65,7 +65,7 @@ const Services = () => {
             <div
               className={`cursor-pointer service ease-in duration-300   bg-center bg-cover ${service.bgImg} max-w-[400px] h-full`}
             >
-              <div className="black_cover hover:bg-transparent ease-in duration-300 bg-[#000] w-full h-full">
+              <div className="black_cover hover:bg-[#00000088] ease-in duration-300 bg-[#00000000] w-full h-full">
                 <motion.div
                   initial={{ y: 40, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -76,7 +76,7 @@ const Services = () => {
                     ease: "easeInOut",
                   }}
                   viewport={{ once: true }}
-                  className="w-full h-full bg-[#000000d0] px-8 py-10 flex flex-col items-start gap-4"
+                  className="w-full h-full bg-[#0000008c] px-8 py-10 flex flex-col items-start gap-4"
                 >
                   <img
                     src={service.icon}

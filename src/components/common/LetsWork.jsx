@@ -10,7 +10,7 @@ const LetsWork = () => {
           title={"colaborating"}
           titleStyle={""}
           heading={"We love collaborating with other creatives"}
-          headingStyle={"md:text-[3rem]   lg:text-[4rem]"}
+          headingStyle={"md:text-[2.5rem]   lg:text-[3.5rem]"}
           divStyle={
             "flex items-center items-center justify-center bg- text-center md:mx-auto md:w-[70%] "
           }

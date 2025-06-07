@@ -39,7 +39,7 @@ const OurServices = () => {
                 <div
                   className={`cursor-pointer service ease-in duration-300   bg-center bg-cover ${service.bgImg} max-w-[400px] h-full`}
                 >
-                  <div className="black_cover hover:bg-transparent ease-in duration-300 bg-[#000] w-full h-full">
+                  <div className="black_cover hover:bg-[#00000088] ease-in duration-300 bg-[#00000000] w-full h-full">
                     <motion.div
                       initial={{ y: 40, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
@@ -50,7 +50,7 @@ const OurServices = () => {
                         ease: "easeInOut",
                       }}
                       viewport={{ once: true }}
-                      className="w-full h-full bg-[#000000d6] px-8 py-10 flex flex-col items-start gap-4"
+                      className="w-full h-full bg-[#0000008c] px-8 py-10 flex flex-col items-start gap-4"
                     >
                       <img
                         src={service.icon}
