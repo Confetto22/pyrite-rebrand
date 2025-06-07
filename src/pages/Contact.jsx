@@ -4,6 +4,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
 import { TfiLocationPin } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const formInputs = [
   {
@@ -26,25 +27,27 @@ const formInputs = [
 const contactValues = [
   {
     name: "Phone",
-    value: "+233(0)593552731",
-    refLink: "#",
+    value: "+233(0)-202-416-677",
+    refLink: "tel:233202416677",
     icon: <LuPhoneCall />,
   },
   {
     name: "Email",
-    value: "info@pyritecalssics.com",
-    refLink: "#",
+    value: "info.jilovastudios.com",
+    refLink: "mailto:info.jilovastudios.com",
     icon: <MdOutlineMail />,
   },
   {
     name: "Location",
-    value: "1800 Abbot Kinney Blvd. Unit D & E Venice, CA 90291",
-    refLink: "#",
+    value: "1 Airport Square",
+    refLink:
+      "https://www.google.com/maps/place/1+Airport+Square/@5.6004514,-0.1799437,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9b24d499ad2d:0x8354c5d0aa1d3b04!8m2!3d5.6004461!4d-0.1773688!16s%2Fg%2F11jjm7r_f2?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D",
     icon: <TfiLocationPin />,
   },
 ];
 
 const Contact = () => {
+  const [hovered, setHovered] = useState("");
   return (
     <section className="contact_page">
       <PageHead
@@ -57,12 +60,14 @@ const Contact = () => {
         prevLink={"/"}
       />
       <section className="px-7 py-24 flex flex-col md:flex-row md:items-start md:justify-center gap-14 md:gap-5">
-        <div className="contact-cards flex flex-col items-start gap-8 md:w-[40%] ">
+        <div className="contact-cards  flex flex-col items-start gap-8 md:w-[30%] ">
           {contactValues.map((card) => (
             <Link
               to={card.refLink}
               key={card.name}
               className="flex items-center gap-1 "
+              onMouseOver={() => setHovered(card.name)}
+              onMouseOut={() => setHovered("")}
             >
               <motion.span
                 initial={{ y: 40, opacity: 0 }}
@@ -74,11 +79,15 @@ const Contact = () => {
                   ease: "easeInOut",
                 }}
                 viewport={{ once: true }}
-                className="text-[1.6rem] p-4 rounded-full text-[var(--secondary-color)] bg-[var(--primary-color)]"
+                className={`text-[1.6rem] p-4 ease-in duration-300 rounded-full  ${
+                  hovered === card.name
+                    ? "text-[var(--primary-color)] bg-[var(--secondary-color)]"
+                    : "text-[var(--secondary-color)] bg-[var(--primary-color)]"
+                }`}
               >
                 {card.icon}
               </motion.span>
-              <div className="text-[1.5rem] font-[600]">
+              <div className={`text-[1.5rem]  font-[600]`}>
                 <motion.h2
                   initial={{ x: 40, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -103,7 +112,9 @@ const Contact = () => {
                     ease: "easeInOut",
                   }}
                   viewport={{ once: true }}
-                  className="text-[1.1rem] font-[300]"
+                  className={`text-[1.1rem] ease-in duration-300 font-[300]  ${
+                    hovered === card.name ? "text-[var(--primary-color)]" : ""
+                  }`}
                 >
                   {card.value}
                 </motion.p>
@@ -136,7 +147,7 @@ const Contact = () => {
         </form>
       </section>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.089405842192!2d-0.32081232566102424!3d5.553763833673537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbdf3d2cd56d5%3A0x288d247b8da7f24b!2sMystery%20Embassy%20International!5e0!3m2!1sen!2sgh!4v1749173993366!5m2!1sen!2sgh"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7734456389726!2d-0.1799437256608452!3d5.600451433202449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b24d499ad2d%3A0x8354c5d0aa1d3b04!2s1%20Airport%20Square!5e0!3m2!1sen!2sgh!4v1749256206949!5m2!1sen!2sgh"
         className="w-full min-h-[70vh]"
         allowfullscreen=""
         loading="lazy"

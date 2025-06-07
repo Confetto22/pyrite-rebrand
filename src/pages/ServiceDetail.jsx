@@ -61,7 +61,7 @@ const ServiceDetail = () => {
       <section className="service_detail px-7 py-24 flex flex-col gap-12 md:flex-row md:items-start">
         <div className="service_text md:w-[55%] flex flex-col gap-12">
           <img
-            src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg"
+            src={filterServices[0].more.pics[0]}
             alt="pyrite classics"
             className="aspect-[14/8] object-cover object-center"
           />

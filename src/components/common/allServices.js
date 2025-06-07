@@ -8,10 +8,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1720833104/pyrite/pyritePic11_ye2hz7.jpg')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295674/pyrite/DSC_7202_1_ait44h.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295681/pyrite/IMG_9063_axg2sa.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295683/pyrite/IMG_8934_xxd5or.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295698/pyrite/IMG_7511_mzsjeb.jpg",
       ],
       whyChoose:
         "At Jilova Studios, we understand the power of storytelling in the corporate world. Our corporate production service is designed to help businesses like yours communicate their message, showcase their brand, and connect with their audience through compelling video content. If you're looking for a team of experts who can help you create compelling corporate video content, look no further than Jilova Studios. Contact us today to learn more about our corporate production service and let's start telling your brand's story.",
@@ -33,10 +33,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738943916/pyrite/modern-steadicam-against-videographer-and-his-assi-73CZ95V_pb2fcu.jpg')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295691/pyrite/IMG_0123_aqiaf5.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295688/pyrite/IMG_0145_byjymx.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295673/pyrite/IMG_0137_tzjjax.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295720/pyrite/IMG_7777_j87f9a.jpg",
       ],
       whyChoose:
         "Our directors have extensive experience in film and television production, bringing a wealth of knowledge and expertise to your project. We've worked on a wide range of projects, from indie films to big-budget blockbusters, and have a deep understanding of what makes a film successful. We bring a unique and creative approach to every project, ensuring that your movie stands out from the crowd. Our directors are passionate about storytelling and are always looking for new and innovative ways to bring stories to life.",
@@ -57,10 +57,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719673403/pyrite/pexels-ron-lach-8088386_viwstf.webp')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295692/pyrite/IMG_7725_diiqpi.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295694/pyrite/IMG_7832_zcx06s.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295703/pyrite/IMG_7355_zu8ku4.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295716/pyrite/IMG_8122_wwuo7p.jpg",
       ],
       whyChoose:
         "Our Advertising & Sales Promotions service is a comprehensive solution that covers all aspects of campaign development and execution. We'll work closely with you to understand your business goals, target audience, and unique selling proposition, and develop a customized advertising strategy that aligns with your objectives. Our team of creatives will then develop engaging ads that capture the essence of your brand and message, using a range of media channels to reach your target audience. We'll handle all aspects of campaign execution, from production to launch, and track and measure the effectiveness of your campaigns to ensure that they're meeting your goals. Our expertise in sales promotions will also help you develop targeted promotions that drive sales and increase revenue. Whether you're looking to launch a new product, increase brand awareness, or drive website traffic, we'll work with you to develop a campaign that meets your needs and exceeds your expectations.",
@@ -81,10 +81,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248578/pyrite/Asset3_hbi2ah.jpg')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295725/pyrite/IMG_8770_fmo2zd.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295707/pyrite/IMG_8360_fpghny.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295701/pyrite/IMG_7421_x6xuh7.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295724/pyrite/IMG_8250_p07nem.jpg",
       ],
       whyChoose:
         "Our Script Writing Consultation service provides expert guidance and support to help you develop a script that meets your creative vision. We'll work closely with you to understand your story, characters, and themes, and provide constructive feedback and suggestions to improve your script. Our experienced scriptwriters will help you develop a strong narrative structure, engaging dialogue, and believable characters. We'll also assist you in refining your script's tone, pace, and style to ensure that it aligns with your creative goals.",
@@ -106,10 +106,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719609865/pyrite/close-up-of-steadicam-screens-with-female-model-using-laptop-by-table-min_y04dup.webp')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722246751/pyrite/newAsset_yadwup.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247673/pyrite/IMG_0235_cnjfdq.webp",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722251703/pyrite/IMG_0142_cyxfjq.webp",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295679/pyrite/IMG_8298_wfhfc1.jpg",
       ],
       whyChoose:
         "We provide a comprehensive planning and execution support to ensure that your event is a success. We'll work closely with you to understand your vision, objectives, and requirements, and develop a customized event plan that meets your needs. From venue selection and catering to audio-visual and technical support, we'll handle all aspects of event planning and execution. Our experienced event planners will ensure that every detail is meticulously planned and executed, allowing you to focus on what matters most - enjoying the event with your guests.",
@@ -131,10 +131,10 @@ export const services = [
       "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719609864/pyrite/man-editing-video-min_t03zeu.webp')]",
     more: {
       pics: [
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749124929/pyrite/director-service-bg-updated_u3qkxb.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295674/pyrite/DSC_7202_1_ait44h.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295706/pyrite/IMG_8413_iwitpp.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295712/pyrite/IMG_8418_byjlbg.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295727/pyrite/IMG_8363_wib0ch.jpg",
       ],
       whyChoose:
         "We offer research solutions to help you make informed business decisions. We'll work closely with you to understand your research objectives and develop a customized research plan that meets your needs. Our experienced researchers will collect and analyze data, providing actionable insights and recommendations to inform your business strategy. We'll help you identify market opportunities, understand customer needs and preferences, and stay ahead of the competition.",

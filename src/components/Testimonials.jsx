@@ -8,24 +8,24 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 const testimonials = [
   {
-    name: "testimonial 1",
+    name: "Joshua Artkinson",
     pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719660240/pyrite/01_qjqwba.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, excepturi quibusdam sint reiciendis, cupiditate at suscipit eveniet, nobis id necessitatibus aliquid dolore consequatur ad magni animi consectetur. Et, doloremque.",
+    text: "Working with Jilova Studios was an incredible experience! Their team brought our story to life with creativity and professionalism. The final film exceeded all our expectations.",
   },
   {
-    name: "testimonial 2",
+    name: "Vera Freeman",
     pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719661026/pyrite/18_dyxmza.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, excepturi quibusdam sint reiciendis, cupiditate at suscipit eveniet, nobis id necessitatibus aliquid dolore consequatur ad magni animi consectetur. Et, doloremque.",
+    text: " Jilova Studios handled every aspect of our documentary with care and attention to detail. Their passion for storytelling truly shines through in their work.",
   },
   {
-    name: "testimonial 3",
+    name: "Michael Morgan",
     pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719661027/pyrite/19_xk0lol.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, excepturi quibusdam sint reiciendis, cupiditate at suscipit eveniet, nobis id necessitatibus aliquid dolore consequatur ad magni animi consectetur. Et, doloremque.",
+    text: "From start to finish, Jilova Studios made the production process seamless and enjoyable. I highly recommend them to anyone looking for top-notch film production.",
   },
   {
-    name: "testimonial 4",
+    name: "Mabel Bonney",
     pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719852263/pyrite/14_gqkwwd.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, excepturi quibusdam sint reiciendis, cupiditate at suscipit eveniet, nobis id necessitatibus aliquid dolore consequatur ad magni animi consectetur. Et, doloremque.",
+    text: "The team at Jilova Studios is talented, dedicated, and innovative. Our project was delivered on time and the quality was outstanding. We look forward to working with them again!",
   },
 ];
 
@@ -54,7 +54,7 @@ const Testimonials = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           }}

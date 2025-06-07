@@ -70,13 +70,18 @@ const Navbar = () => {
   const pageLocation = useLocation();
   return (
     <nav className="navbar px-5 md:px-8 py-5  flex items-center justify-between ">
-      <Link to={"/"}>
-        <img
-          src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1749147676/pyrite/jilova-logo-removebg-preview_mq5pee.png"
-          alt="pyrite classics"
-          className="max-w-[100px]"
-        />
-      </Link>
+      <div className="flex items-center gap-4">
+        <Link to={"/"}>
+          <img
+            src="https://res.cloudinary.com/dv9aqxptd/image/upload/v1749147676/pyrite/jilova-logo-removebg-preview_mq5pee.png"
+            alt="pyrite classics"
+            className="max-w-[100px]"
+          />
+        </Link>
+        <h2 className="uppercase font-[700] text-[var(--primary-color)] text-[1.2rem]">
+          jilova studios
+        </h2>
+      </div>
       <div className="md:flex hidden items-center md:gap-[3rem] lg:gap-[7rem] ">
         <menu className="flex items-center gap-4 uppercase text-[1.1rem] font-[500] ">
           {pageLinks.map((link) => (

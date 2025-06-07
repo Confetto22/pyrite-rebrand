@@ -11,7 +11,7 @@ const Projects = () => {
     <section>
       <PageHead
         bgPic={
-          "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
+          "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722249707/pyrite/Asset6_fubgcm.jpg')]"
         }
         // currProject={'name'}
         currPage={"Projects"}
@@ -39,7 +39,7 @@ const Projects = () => {
               className={`project ${project.img} bg-center bg-cover h-[60vh] max-w-[600px] relative `}
             >
               <div className="cover hover:bg-[#000000d4] ease-in duration-300 flex flex-col justify-between p-4 px-8">
-                <p className="text-white text-center text-[1.6rem] font-semibold capitalize ">
+                <p className="text-white text-left text-[1.6rem] font-semibold capitalize ">
                   {project.name}
                 </p>
                 {/* <Link

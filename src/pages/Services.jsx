@@ -10,7 +10,7 @@ const Services = () => {
     <section className="services">
       <PageHead
         bgPic={
-          "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
+          "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722251703/pyrite/IMG_0142_cyxfjq.webp')]"
         }
         // currProject={'name'}
         currPage={"Services"}

@@ -91,7 +91,7 @@ const ProjectDetail = () => {
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
         }
-        currProject={name}
+        currProject={project.name}
         currPage={project.name}
         prevPage={"Projects"}
         prevLink={"/projects"}
@@ -100,7 +100,7 @@ const ProjectDetail = () => {
         <section className="pb-16 flex flex-col gap-14 md:gap-0 md:flex-row md:items-start  md:justify-around">
           <div className="details_area  w-full text-[var(--secondary-color)] md:w-[55%]">
             <div className="flex flex-col gap-5 items-start py-16">
-              <motion.h1
+              <motion.h2
                 initial={{ x: -40, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
@@ -112,8 +112,8 @@ const ProjectDetail = () => {
                 viewport={{ once: true }}
                 className="text-black font-bold text-[1.6rem] md:text-[2rem] uppercase tracking-wide"
               >
-                {name} - {project.year} {project.genre}
-              </motion.h1>
+                {project.name} - {project.year} {project.genre}
+              </motion.h2>
               <motion.p
                 initial={{ x: 40, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -157,7 +157,7 @@ const ProjectDetail = () => {
                 <img
                   src={project.slideshow[0]}
                   alt="pyrite classics"
-                  className="w-full aspect-[18/10] md:aspect-[19/7] object-cover object-center"
+                  className="w-full aspect-[18/12]  object-cover object-center"
                 />
                 <div className=" bg-[#000000ab] absolute w-full h-full top-0 left-0 flex items-center justify-center">
                   <FaCirclePlay className="text-[2.4rem] md:text-[4.4rem] text-white" />
@@ -190,12 +190,7 @@ const ProjectDetail = () => {
               viewport={{ once: true }}
               className="text-[1rem] md:text-[1.2rem] font-[400] text-[var(--secondary-color)]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, laudantium aspernatur. Pariatur inventore animi
-              repellat repudiandae ullam velit, non similique esse harum
-              accusamus saepe! Ad, ut. Ut blanditiis dolor laboriosam aut
-              voluptatibus id, omnis alias in commodi, excepturi a numquam.
-              Aliquid quasi fugit eaque! Dolorum odio natus aliquid velit fuga?
+              {project.overview}
             </motion.p>
           </div>
 
@@ -275,15 +270,12 @@ const ProjectDetail = () => {
                 ease: "easeInOut",
               }}
               viewport={{ once: true }}
+              className="text-[1.1rem]"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-              accusantium sit nam quia facere veniam? Adipisci, optio explicabo
-              provident architecto modi, unde, similique doloribus odit quo
-              consequatur velit fugiat tenetur est rem laboriosam exercitationem
-              laborum. Eius magni quae placeat fugiat.
+              {project.execution?.writeUp}
             </motion.p>
-            <ul>
-              {project.projectList.map((singleList) => (
+            <ul className="flex flex-col gap-3">
+              {project.execution?.points.map((singleList) => (
                 <motion.li
                   initial={{ y: 40, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -295,7 +287,7 @@ const ProjectDetail = () => {
                   }}
                   viewport={{ once: true }}
                   key={singleList}
-                  className="list-none flex items-center gap-1 font-[600] text-[1.1rem] md:text-[1.2rem]"
+                  className="list-none flex items-start gap-1 font-[600] text-[1.1rem] "
                 >
                   <span>
                     <GiCheckMark className="text-[var(--primary-color)]" />

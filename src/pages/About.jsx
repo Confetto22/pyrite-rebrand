@@ -199,10 +199,10 @@ const About = () => {
               Lights, camera, values! We live and breathe storytelling magic,
               infuse creativity into every scene, and pledge an unwavering
               dedication to cinematic excellence. Crafting films that linger in
-              hearts long after the screen fades to black! At Pyrite Classics,
-              we believe that exceptional storytelling has the power to
-              captivate, inspire, and transform audiences. Our team is dedicated
-              to delivering high-quality movie productions that exceed our
+              hearts long after the screen fades to black! At Jilova Studios, we
+              believe that exceptional storytelling has the power to captivate,
+              inspire, and transform audiences. Our team is dedicated to
+              delivering high-quality movie productions that exceed our
               clients&apos; expectations. Here&apos;s what sets us apart.
               We&apos;re passionate about storytelling and dedicated to bringing
               your vision to life. Our team of experienced professionals is

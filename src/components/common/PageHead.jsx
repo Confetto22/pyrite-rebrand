@@ -9,9 +9,11 @@ const PageHead = ({
   intro,
 }) => {
   return (
-    <section className={`page_head min-h-[60vh] ${bgPic} `}>
+    <section
+      className={`page_head bg-cover bg-center bg-no-repeat  min-h-[70vh] ${bgPic} `}
+    >
       <div
-        className={`w-full h-full bg-[#000000cd] min-h-[60vh] flex flex-col items-center gap-3 justify-center px-8  text-center`}
+        className={`w-full h-full bg-[#000000cd] min-h-[70vh] flex flex-col items-center gap-3 justify-center px-8  text-center`}
       >
         <p className="text-white text-[2rem] font-bold md:text-[3.5rem] uppercase">
           {currProject}

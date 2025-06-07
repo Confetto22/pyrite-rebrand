@@ -35,39 +35,45 @@ const footerResources = [
   },
   {
     ref: "home",
-    refLink: "#",
+    refLink: "/",
     type: "quickLinks",
   },
   {
     ref: "about",
-    refLink: "#",
+    refLink: "/about-us",
     type: "quickLinks",
   },
   {
     ref: "projects",
-    refLink: "#",
+    refLink: "/projects",
     type: "quickLinks",
   },
   {
-    ref: "journal",
-    refLink: "#",
+    ref: "Services",
+    refLink: "/services",
     type: "quickLinks",
   },
   {
-    ref: "Weija, Ghana",
-    refLink: "#",
+    ref: "Contact",
+    refLink: "/contact",
+    type: "quickLinks",
+  },
+  {
+    ref: "1 Airport Square",
+    refLink:
+      "https://www.google.com/maps/place/1+Airport+Square/@5.6004514,-0.1799437,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9b24d499ad2d:0x8354c5d0aa1d3b04!8m2!3d5.6004461!4d-0.1773688!16s%2Fg%2F11jjm7r_f2?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D",
     icon: <CiLocationOn />,
     type: "contact",
   },
   {
-    ref: "info@pyriteclassics.com",
-    refLink: "#",
+    ref: "info.jilovastudios.com",
+    refLink: "mailto:info.jilovastudios.com",
     icon: <IoMdMail />,
     type: "contact",
   },
   {
-    ref: "+233(0)593552731",
-    refLink: "#",
+    ref: "+233(0)-202-416-677",
+    refLink: "tel:233202416677",
     icon: <FaPhone />,
     type: "contact",
   },
@@ -118,11 +124,13 @@ const Footer = () => {
     <footer className="footer  bg-[var(--secondary-color)] text-[white] p-8 ">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:items-center md:justify-items-center py-11 md:py-20">
         <div className=" h-full footer_box flex flex-col items-start justify-start gap-5">
-          <h2 className="font-bold text-[1.8rem] uppercase">About pyrite</h2>
+          <h2 className="font-bold text-[1.8rem] uppercase">About Jilova</h2>
           <p className="md:max-w-[300px] max-w-[400px] text-white">
-            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-            doloremque laudanti. Sed ut perspiciatis unde omnis iste natus
-            voluptatem accusantium doloremque laudanti.
+            Jilova Studios is a creative movie production company dedicated to
+            crafting compelling stories that inspire, educate, and captivate
+            audiences. With expertise in producing high-impact visual content,
+            we bring ideas to life through film, video, and multimedia
+            productions
           </p>
           <div className=" flex items-center gap-4 ">
             {footerSocials.map((social) => (
@@ -178,7 +186,7 @@ const Footer = () => {
         <p>
           Developed by{" "}
           <Link
-            to={"#"}
+            to={"https://github.com/Confetto22"}
             target="_blank"
             className="underline underline-offset-2"
           >
