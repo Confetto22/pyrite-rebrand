@@ -12,7 +12,7 @@ export const projects = [
     ],
     desc: {
       pargagraph1:
-        "With cutting edge technology, PYRITE adapted an Ethiopian Public Service Announcement (PSA) for our clients to use in our Ghanaian context. Creativity, precision and dynamism were exhibited at its peak to re-create an extremely effective PSA. ",
+        "With cutting edge technology, JILOVA adapted an Ethiopian Public Service Announcement (PSA) for our clients to use in our Ghanaian context. Creativity, precision and dynamism were exhibited at its peak to re-create an extremely effective PSA. ",
       pargagraph2:
         "The Enforcement Mass Media Campaign was a strategic initiative aimed at reducing road accidents caused by speeding. Jilova Studios developed a compelling narrative that highlighted the dangers of speeding and the importance of adhering to speed limits. Through a combination of impactful visuals, engaging storytelling, and targeted messaging, the campaign sought to influence driver behavior and foster a culture of safety on the roads.",
     },
@@ -86,9 +86,9 @@ export const projects = [
     ],
     desc: {
       pargagraph1:
-        "This global commemoration received a touch of excellence from Pyrite as we developed short videos, mini documentary and top notch photography to add to the color and vibrancy to this all important global commemoration spearheaded by the National Road Safety Authority, Accra Metropolitan Assembly with support from the Bloomberg Philanthropies Initiative for Global road Safety.",
+        "This global commemoration received a touch of excellence from Jilova as we developed short videos, mini documentary and top notch photography to add to the color and vibrancy to this all important global commemoration spearheaded by the National Road Safety Authority, Accra Metropolitan Assembly with support from the Bloomberg Philanthropies Initiative for Global road Safety.",
       pargagraph2:
-        "Pyrite added a touch of excellence to the global commemoration of Road Safety Week 2021 by developing a range of creative and impactful visual content. Our team produced short videos, a mini-documentary, and top-notch photography that brought vibrancy and color to this important event.",
+        "We added a touch of excellence to the global commemoration of Road Safety Week 2021 by developing a range of creative and impactful visual content. Our team produced short videos, a mini-documentary, and top-notch photography that brought vibrancy and color to this important event.",
     },
     refLink: "#",
     cardDetails: [
@@ -133,7 +133,7 @@ export const projects = [
     // ],
     img: "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1749291935/pyrite/ROAD-SAFETY/17_bdbbs8.webp')]",
     overview:
-      "This project was aimed at creating an engaging and impactful visual content for the global commemoration of Road Safety Week.The visual content developed by Pyrite helped to amplify the message of Road Safety Week 2021. Pyrite also played a key role in developing the visual content for Road Safety Week 2021, working closely with the National Road Safety Authority, Accra Metropolitan Assembly, and Bloomberg Philanthropies Initiative for Global Road Safety to create impactful and engaging content that promoted road safety awareness.",
+      "This project was aimed at creating an engaging and impactful visual content for the global commemoration of Road Safety Week.The visual content developed by Jilova Studios helped to amplify the message of Road Safety Week 2021. We  also played a key role in developing the visual content for Road Safety Week 2021, working closely with the National Road Safety Authority, Accra Metropolitan Assembly, and Bloomberg Philanthropies Initiative for Global Road Safety to create impactful and engaging content that promoted road safety awareness.",
     execution: {
       writeUp:
         "The execution of the Road Safety Week 2021 project involved careful planning and attention to detail. Key aspects included:",
@@ -276,7 +276,7 @@ export const projects = [
     ],
     img: "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4896_eoq3yu.webp')]",
     overview:
-      "The objective of this project was to create a powerful and impactful public service announcement (PSA) that highlights the tragic consequences of road crashes, particularly for vulnerable road users such as school children. The School Girl PSA generated significant attention and sympathy from viewers, sparking conversations about road safety and the need for greater awareness and action. The campaign's impact was amplified by its ability to evoke strong emotions and create a lasting impression on its audience. Pyrite played a pivotal role in conceptualizing, producing, and executing the School Girl PSA. Our team of experts worked tirelessly to craft a compelling narrative that would resonate with audiences and drive home the importance of road safety",
+      "The objective of this project was to create a powerful and impactful public service announcement (PSA) that highlights the tragic consequences of road crashes, particularly for vulnerable road users such as school children. The School Girl PSA generated significant attention and sympathy from viewers, sparking conversations about road safety and the need for greater awareness and action. The campaign's impact was amplified by its ability to evoke strong emotions and create a lasting impression on its audience. Jilova Studios played a pivotal role in conceptualizing, producing, and executing the School Girl PSA. Our team of experts worked tirelessly to craft a compelling narrative that would resonate with audiences and drive home the importance of road safety",
     execution: {
       writeUp:
         "The execution of the School Girl PSA involved meticulous planning and attention to detail to ensure a high-quality final product. Key aspects of the project execution included:",
