@@ -49,7 +49,7 @@ const contactValues = [
 const Contact = () => {
   const [hovered, setHovered] = useState("");
   return (
-    <section className="contact_page">
+    <section className="contact_page overflow-x-hidden">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"

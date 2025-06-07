@@ -86,7 +86,7 @@ const ProjectDetail = () => {
   // console.log(name);
 
   return (
-    <section className="project_details">
+    <section className="project_details overflow-x-hidden">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"

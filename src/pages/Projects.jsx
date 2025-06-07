@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   //   const navigate = useNavigate();
   return (
-    <section>
+    <section className="overflow-x-hidden">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722249707/pyrite/Asset6_fubgcm.jpg')]"
