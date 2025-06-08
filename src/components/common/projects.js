@@ -4,11 +4,11 @@ export const projects = [
     year: "2019",
     genre: "media campaign",
     slideshow: [
-      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/401A4383_bmufz3.webp",
-      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/401A4392_t7yuqn.webp",
-      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/401A4805_fxo4zn.webp",
-      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/401A4424_gywbhc.webp",
-      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/401A4896_eoq3yu.webp",
+      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4392_t7yuqn.webp",
+      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4424_gywbhc.webp",
+      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4805_fxo4zn.webp",
+      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4896_eoq3yu.webp",
+      "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749290030/pyrite/school-girl-psa/401A4383_bmufz3.webp",
     ],
     desc: {
       pargagraph1:
