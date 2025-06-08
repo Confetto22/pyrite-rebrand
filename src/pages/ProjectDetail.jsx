@@ -86,7 +86,7 @@ const ProjectDetail = () => {
   // console.log(name);
 
   return (
-    <section className="project_details overflow-x-hidden">
+    <section className="project_details ">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
@@ -96,7 +96,7 @@ const ProjectDetail = () => {
         prevPage={"Projects"}
         prevLink={"/projects"}
       />
-      <section className="detail_area px-8">
+      <section className="detail_area px-8 py-8">
         <section className="pb-16 flex flex-col gap-14 md:gap-0 md:flex-row md:items-start  md:justify-around">
           <div className="details_area  w-full text-[var(--secondary-color)] md:w-[55%]">
             <div className="flex flex-col gap-5 items-start py-16">
@@ -196,7 +196,7 @@ const ProjectDetail = () => {
             </motion.p>
           </div>
 
-          <aside className="flex flex-col gap-12 md:w-[40%]  rounded-md md:sticky md:top-3">
+          <aside className="flex flex-col gap-12 md:w-[40%]  rounded-md md:sticky top-3">
             <div className="shadow-2xl detail_card rounded-sm text-white bg-[var(--secondary-color)]  py-8 max-w-[500px] md:max-w-full mx-auto  p-4 flex flex-col gap-7 items-center w-full">
               <p className="font-bold text-[1.5rem] uppercase text-center">
                 project detail
