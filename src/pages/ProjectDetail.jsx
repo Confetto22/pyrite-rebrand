@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 // import OurProjects from "../components/OurProjects";
 import { projects } from "../components/common/projects";
 import PageHead from "../components/common/PageHead";
@@ -154,14 +154,16 @@ const ProjectDetail = () => {
                 viewport={{ once: true }}
                 className="project_banner relative  w-full "
               >
-                <img
-                  src={project.slideshow[0]}
-                  alt="pyrite classics"
-                  className="w-full aspect-[18/12]  object-cover object-center"
-                />
-                <div className=" bg-[#000000ab] absolute w-full h-full top-0 left-0 flex items-center justify-center">
-                  <FaCirclePlay className="text-[2.4rem] md:text-[4.4rem] text-white" />
-                </div>
+                <Link to={project.refLink} target="_blank">
+                  <img
+                    src={project.slideshow[0]}
+                    alt="pyrite classics"
+                    className="w-full aspect-[18/12]  object-cover object-center"
+                  />
+                  <span className=" bg-[#000000ab] absolute w-full h-full top-0 left-0 flex items-center justify-center">
+                    <FaCirclePlay className="text-[2.4rem] md:text-[4.4rem] text-white" />
+                  </span>
+                </Link>
               </motion.div>
             </div>
             <motion.h2

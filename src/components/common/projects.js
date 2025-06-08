@@ -15,7 +15,7 @@ export const projects = [
         "The School Girl PSA tells the heart-wrenching story of a young girl who loses her life on her way to school due to a road crash. With precision and creativity at its core, this PSA was crafted to evoke strong emotions and grab the attention of viewers. The production quality was so high that many viewers believed the story to be real, underscoring the campaign's effectiveness in conveying its message.",
       pargagraph2: "",
     },
-    refLink: "#",
+    refLink: "https://vimeo.com/1091568093/0064b43ac6?ts=0&share=copy",
     cardDetails: [
       {
         name: "Client",
@@ -232,7 +232,7 @@ export const projects = [
       pargagraph2:
         "The Enforcement Mass Media Campaign was a strategic initiative aimed at reducing road accidents caused by speeding. Jilova Studios developed a compelling narrative that highlighted the dangers of speeding and the importance of adhering to speed limits. Through a combination of impactful visuals, engaging storytelling, and targeted messaging, the campaign sought to influence driver behavior and foster a culture of safety on the roads.",
     },
-    refLink: "#",
+    refLink: "https://youtu.be/B4uFNU_FTL0?si=ZNB_i0D7dgpCzWjE",
 
     cardDetails: [
       {
