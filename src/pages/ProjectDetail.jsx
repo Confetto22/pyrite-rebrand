@@ -142,19 +142,19 @@ const ProjectDetail = () => {
               >
                 {project.desc.pargagraph2}
               </motion.p>
-              <motion.div
-                initial={{ y: 40, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.2,
-                  y: { type: "spring", duration: 1, stiffness: 40 },
-                  opacity: { duration: 2 },
-                  ease: "easeInOut",
-                }}
-                viewport={{ once: true }}
-                className="project_banner relative  w-full "
-              >
-                <Link to={project.refLink} target="_blank">
+              <Link to={project.refLink} target="_blank">
+                <motion.div
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", duration: 1, stiffness: 40 },
+                    opacity: { duration: 2 },
+                    ease: "easeInOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="project_banner relative  w-full "
+                >
                   <img
                     src={project.slideshow[0]}
                     alt="pyrite classics"
@@ -163,8 +163,8 @@ const ProjectDetail = () => {
                   <span className=" bg-[#000000ab] absolute w-full h-full top-0 left-0 flex items-center justify-center">
                     <FaCirclePlay className="text-[2.4rem] md:text-[4.4rem] text-white" />
                   </span>
-                </Link>
-              </motion.div>
+                </motion.div>
+              </Link>
             </div>
             <motion.h2
               initial={{ x: -40, opacity: 0 }}
