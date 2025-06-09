@@ -46,7 +46,7 @@ const ServiceDetail = () => {
   );
 
   return (
-    <section className="service-detail overflow-x-hidden">
+    <section className="service-detail ">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
