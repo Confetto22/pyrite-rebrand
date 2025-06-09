@@ -149,7 +149,7 @@ const Contact = () => {
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7734456389726!2d-0.1799437256608452!3d5.600451433202449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b24d499ad2d%3A0x8354c5d0aa1d3b04!2s1%20Airport%20Square!5e0!3m2!1sen!2sgh!4v1749256206949!5m2!1sen!2sgh"
         className="w-full min-h-[70vh]"
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>

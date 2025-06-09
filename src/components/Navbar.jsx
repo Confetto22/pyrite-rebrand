@@ -113,27 +113,23 @@ const Navbar = () => {
           </button>
         </SheetTrigger>
         <SheetContent>
-          <SheetTitle>
-            <h2 className="uppercase font-[700] text-[1.6rem]">
-              jilova studios
-            </h2>
-            <hr className="mt-2 mb-9" />
+          <SheetTitle className="uppercase font-[700] text-[1.6rem]">
+            jilova studios
           </SheetTitle>
-          <SheetDescription>
-            <menu className="flex flex-col items-start  gap-4 uppercase text-[1.1rem] font-[500]">
-              {pageLinks.map((link) => (
-                <SheetClose asChild key={link.name}>
-                  <Link
-                    to={link.refLink}
-                    key={link.name}
-                    className="hover:text-[var(--primary-color)] ease-in duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </SheetClose>
-              ))}
-            </menu>
-          </SheetDescription>
+          <SheetDescription></SheetDescription>
+          <div className="flex flex-col items-start  gap-4 uppercase text-[1.1rem] font-[500]">
+            {pageLinks.map((link) => (
+              <SheetClose asChild key={link.name}>
+                <Link
+                  to={link.refLink}
+                  key={link.name}
+                  className="hover:text-[var(--primary-color)] ease-in duration-200"
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
+            ))}
+          </div>
         </SheetContent>
       </Sheet>
     </nav>
