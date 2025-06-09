@@ -195,10 +195,14 @@ const Home = () => {
             }}
             viewport={{ once: true }}
           >
-            Proin et magna blandit arcu pellentesque scelerisque sit amet a
-            sapien. Aenean purus nunc, cursus in ante in, vehicula facilisis
-            dui. Integer consequat consectetur est id blandit. Proin et magna
-            blandit arcu pellentesque scelerisque sit amet a sapien.
+            At Jilova Studios, we are passionate about bringing stories to life
+            through the art of cinematography and film production. Our team of
+            experienced professionals is dedicated to crafting visually stunning
+            and emotionally resonant films that captivate audiences and leave a
+            lasting impression.By choosing Jilova Studios, you can trust that
+            your film production project is in good hands. We are committed to
+            delivering high-quality productions that meet your needs and exceed
+            your expectations.
           </motion.p>
           {/* <Button refLink={"#"} btStyle={"bg-[var(--primary-color)] "}>
             get started
@@ -211,7 +215,7 @@ const Home = () => {
       <section className="partner bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738977282/pyrite/film-industry-4GJLQAD_z3laxr.jpg')] bg-cover bg-center">
         <div className=" min-h-[70vh] bg-[#000000c4] flex flex-col items-center justify-center text-white text-center p-8 gap-5">
           <h2 className="font-[800] text-[2rem] capitalize max-w-[700px]">
-            Partner with Pyrite Today! Contact Us for a Cinematic Journey.
+            Partner with Jilova Today! Contact Us for a Cinematic Journey.
           </h2>
           <p className="text-[1.2rem] font-light max-w-[700px]">
             Explore exciting partnership opportunities that bring stories to

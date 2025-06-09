@@ -9,17 +9,17 @@ import { Autoplay, Navigation } from "swiper/modules";
 const testimonials = [
   {
     name: "Joshua Artkinson",
-    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719660240/pyrite/01_qjqwba.jpg",
+    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749433213/pyrite/IMG-20241011-WA0026_htw89r_ck6ivb.webp",
     text: "Working with Jilova Studios was an incredible experience! Their team brought our story to life with creativity and professionalism. The final film exceeded all our expectations.",
   },
   {
     name: "Vera Freeman",
-    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719661026/pyrite/18_dyxmza.jpg",
+    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749433213/pyrite/IMG-20241011-WA0020_1_tku3th_bhfdzw.webp",
     text: " Jilova Studios handled every aspect of our documentary with care and attention to detail. Their passion for storytelling truly shines through in their work.",
   },
   {
     name: "Michael Morgan",
-    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1719661027/pyrite/19_xk0lol.jpg",
+    pic: "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749433213/pyrite/IMG-20241011-WA0027_lrbadq_mkgqzb.webp",
     text: "From start to finish, Jilova Studios made the production process seamless and enjoyable. I highly recommend them to anyone looking for top-notch film production.",
   },
   {
@@ -76,7 +76,7 @@ const Testimonials = () => {
                   <img
                     src={testimonial.pic}
                     alt={testimonial.name}
-                    className="rounded-full max-w-[80px]"
+                    className="rounded-full w-[70px] h-[70px] max-w-[80px] object-cover object-top"
                   />
                   <p className="uppercase">{testimonial.name}</p>
                 </div>
