@@ -27,7 +27,7 @@ const OurProjects = () => {
           to={"/projects"}
           className="bg-[var(--secondary-color)] px-7 py-3 font-[600] uppercase text-white rounded-sm flex items-center gap-2 hover:gap-[80%] border-2 border-[var(--secondary-color)] hover:bg-transparent hover:text-[var(--secondary-color)] ease-in duration-300"
         >
-          view more
+          all projects
         </Link>
       </div>
       <div className="all_projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:items-center">
@@ -76,7 +76,7 @@ const OurProjects = () => {
                     .toLowerCase()}`}
                   className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  "
                 >
-                  see more <HiOutlineArrowLongRight />
+                  more details <HiOutlineArrowLongRight />
                 </Link>
               </motion.div>
             </div>

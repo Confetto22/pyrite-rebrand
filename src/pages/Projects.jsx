@@ -78,7 +78,7 @@ const Projects = () => {
                       .toLowerCase()}`}
                     className="flex items-center gap-1 hover:gap-2 ease-in duration-200 uppercase  hover:text-[var(--primary-color)] font-semibold  "
                   >
-                    see more <HiOutlineArrowLongRight />
+                    more details <HiOutlineArrowLongRight />
                   </Link>
                 </motion.div>
               </div>

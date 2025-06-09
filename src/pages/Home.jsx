@@ -133,7 +133,7 @@ const Home = () => {
             energy to push your business further.
           </p>
           <Button refLink={"/about-us"} btStyle={"bg-[var(--secondary-color)]"}>
-            learn more
+            about us
           </Button>
           {/* <Link
             to={"#"}
