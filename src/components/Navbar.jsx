@@ -108,7 +108,11 @@ const Navbar = () => {
 
       <Sheet>
         <SheetTrigger asChild>
-          <button className="md:hidden text-[1.7rem] border border-[var(--primary-color)] p-2 rounded-sm text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white ease-in duration-200">
+          <button
+            className="md:hidden text-[1.7rem] border border-[var(--primary-color)] p-2 rounded-sm text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white ease-in duration-200"
+            type="button"
+            aria-label="menu"
+          >
             <IoMenu />
           </button>
         </SheetTrigger>

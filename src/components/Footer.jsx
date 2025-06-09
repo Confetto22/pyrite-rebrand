@@ -138,6 +138,7 @@ const Footer = () => {
                 to={social.refLink}
                 key={social.ref}
                 className="border border-[var(--primary-color)] p-3 hover:bg-[var(--primary-color)] hover:text-black ease-in duration-200"
+                aria-label={`link to our ${social.ref} page`}
               >
                 {social.icon}
               </Link>
