@@ -94,3 +94,9 @@ footer {
   color: rgba(82, 82, 82, 0.671);
   font-size: 0.8rem;
 }
+footer a {
+  transition: 0.3s ease-in;
+}
+footer a:hover {
+  color: var(--primary-color);
+}

@@ -11,25 +11,26 @@ import { FaPhone } from "react-icons/fa6";
 const footerResources = [
   {
     ref: "facebook",
-    refLink: "#",
+    refLink: "https://www.facebook.com/jilovahstudios",
     icon: <FaFacebookF />,
     type: "socials",
   },
   {
     ref: "instagram",
-    refLink: "#",
+    refLink:
+      "https://www.instagram.com/jilovastudios?igsh=MTkzdm9tZTk1cWxxcw==",
     icon: <FaInstagram />,
     type: "socials",
   },
   {
     ref: "youtube",
-    refLink: "#",
+    refLink: "https://www.youtube.com/@jilovastudios",
     icon: <FaYoutube />,
     type: "socials",
   },
   {
     ref: "whatsapp",
-    refLink: "#",
+    refLink: "https://wa.me/233202416677",
     icon: <FaWhatsapp />,
     type: "socials",
   },
@@ -139,6 +140,7 @@ const Footer = () => {
                 key={social.ref}
                 className="border border-[var(--primary-color)] p-3 hover:bg-[var(--primary-color)] hover:text-black ease-in duration-200"
                 aria-label={`link to our ${social.ref} page`}
+                target="_blank"
               >
                 {social.icon}
               </Link>
