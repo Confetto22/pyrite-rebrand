@@ -17,19 +17,19 @@ import { motion } from "framer-motion";
 const countUpValues = [
   {
     name: "years experience",
-    value: 24,
+    value: 6,
   },
   {
     name: "Awards Winning",
-    value: 12,
+    value: 2,
   },
   {
     name: "Professional Staff",
-    value: 46,
+    value: 12,
   },
   {
     name: "Completed Projects",
-    value: 100,
+    value: 25,
   },
 ];
 
