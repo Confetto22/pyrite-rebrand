@@ -30,7 +30,7 @@ export const services = [
     desc: " We believe that a great director is the backbone of any successful film. Our movie directing service is designed to bring your story to life, with a team of experienced and passionate directors who are dedicated to crafting compelling narratives and visually stunning scenes. We understand that every project is unique, and we'll work closely with you to bring your vision to life. We provide expert movie directing services that bring your vision to life. Our experienced directors work closely with your team to ensure a seamless storytelling process, from pre-production to post-production. ",
     intro: "Bringing Your Story to Life with Jilova Studios",
     bgImg:
-      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1738943916/pyrite/modern-steadicam-against-videographer-and-his-assi-73CZ95V_pb2fcu.jpg')]",
+      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295688/pyrite/IMG_0145_byjymx.jpg')]",
     more: {
       pics: [
         "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295691/pyrite/IMG_0123_aqiaf5.jpg",
@@ -103,12 +103,12 @@ export const services = [
     desc: "Our event management team of fine experts apply project management to the creation and development of large-scale and exquisite events, tailored to the taste of our clients. These include; festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions. We strategically study your brand, identify your target audience, devise the event concept, and coordinate the technical aspects to give our clients the events they desire. At Jilova Studios, we understand that events are an integral part of the movie-making experience. That's why we're proud to offer our comprehensive event organization service, designed to bring your vision to life. Whether you're looking to host a film premiere, a behind-the-scenes tour, or an industry party, our team of experts will work tirelessly to ensure that every detail is meticulously planned and executed.",
     intro: " Creating Unforgettable Experiences",
     bgImg:
-      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719609865/pyrite/close-up-of-steadicam-screens-with-female-model-using-laptop-by-table-min_y04dup.webp')]",
+      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1749464846/pyrite/IMG_7421_aujgzh.jpg')]",
     more: {
       pics: [
         "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722246751/pyrite/newAsset_yadwup.jpg",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722247673/pyrite/IMG_0235_cnjfdq.webp",
-        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1722251703/pyrite/IMG_0142_cyxfjq.webp",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749464845/pyrite/IMG_7331_utmcb8.jpg",
+        "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749464847/pyrite/IMG_8418_eztvp9.jpg",
         "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295679/pyrite/IMG_8298_wfhfc1.jpg",
       ],
       whyChoose:
@@ -128,7 +128,7 @@ export const services = [
     desc: "We understand the importance of market research in informing business decisions and driving growth. Our Market Research service is designed to help you gain valuable insights into your target audience, industry trends, and competitors .We gather accurate and thorough information which is the foundation of all successful business ventures. We move a step further to provide a wealth of information about prospective and existing customers, the competition, and the industry in general. We then help your company to make the best market decisions that will aid your company to have that break you have been looking forward to all these years. ",
     intro: " Unlocking Insights for Business Success",
     bgImg:
-      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1719609864/pyrite/man-editing-video-min_t03zeu.webp')]",
+      "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1749464849/pyrite/DSC_7193_1_szncje.jpg')]",
     more: {
       pics: [
         "https://res.cloudinary.com/dv9aqxptd/image/upload/v1749295674/pyrite/DSC_7202_1_ait44h.jpg",
