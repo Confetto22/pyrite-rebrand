@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
+// import { FaPhone } from "react-icons/fa6";
 
 const footerResources = [
   {
@@ -72,12 +72,12 @@ const footerResources = [
     icon: <IoMdMail />,
     type: "contact",
   },
-  {
-    ref: "+233(0)-202-416-677",
-    refLink: "tel:233202416677",
-    icon: <FaPhone />,
-    type: "contact",
-  },
+  // {
+  //   ref: "",
+  //   refLink: "#",
+  //   icon: <FaPhone />,
+  //   type: "contact",
+  // },
 ];
 
 const footerSocials = footerResources.filter(
@@ -123,8 +123,8 @@ const Footer = () => {
 
   return (
     <footer className="footer  bg-[var(--secondary-color)] text-[white] p-8 ">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:items-center md:justify-items-center py-11 md:py-20">
-        <div className=" h-full footer_box flex flex-col items-start justify-start gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:items-center md:justify-items-center py-11 md:py-20">
+        <div className="flex flex-col items-start justify-start h-full gap-5 footer_box">
           <h2 className="font-bold text-[1.8rem] uppercase">About Jilova</h2>
           <p className="md:max-w-[300px] max-w-[400px] text-white">
             Jilova Studios is a creative movie production company dedicated to
@@ -133,7 +133,7 @@ const Footer = () => {
             we bring ideas to life through film, video, and multimedia
             productions
           </p>
-          <div className=" flex items-center gap-4 ">
+          <div className="flex items-center gap-4 ">
             {footerSocials.map((social) => (
               <Link
                 to={social.refLink}
@@ -150,12 +150,12 @@ const Footer = () => {
         <div className="footer_box flex flex-col items-start justify-start gap-5  h-full  max-w-[350px]">
           <h2 className="font-bold text-[1.8rem] uppercase">quick links</h2>
 
-          <div className=" flex flex-col items-start  w-full gap-4 ">
+          <div className="flex flex-col items-start w-full gap-4 ">
             {quickLinks.map((link) => (
               <Link
                 to={link.refLink}
                 key={link.ref}
-                className=" w-full flex items-center gap-3 capitalize text-white"
+                className="flex items-center w-full gap-3 text-white capitalize "
               >
                 <hr className="w-full max-w-[17px] border-none bg-[var(--primary-color)] h-[2px] " />
 
@@ -164,10 +164,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className=" h-full  footer_box flex flex-col items-start justify-start gap-5">
+        <div className="flex flex-col items-start justify-start h-full gap-5 footer_box">
           <h2 className="font-bold text-[1.8rem] uppercase">our location</h2>
 
-          <div className="flex flex-col   items-start justify-start h-full gap-4 ">
+          <div className="flex flex-col items-start justify-start h-full gap-4 ">
             {footerContacts.map((contact) => (
               <Link
                 to={contact.refLink}
@@ -184,7 +184,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-white h-[1px] border-none" />
-      <div className="copyright flex flex-col items-center p-4 text-center text-white">
+      <div className="flex flex-col items-center p-4 text-center text-white copyright">
         <p>Copyright &copy; {currYear}. All rights reserved.</p>
         <p>
           Developed by{" "}

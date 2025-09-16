@@ -27,8 +27,8 @@ const formInputs = [
 const contactValues = [
   {
     name: "Phone",
-    value: "+233(0)-202-416-677",
-    refLink: "tel:233202416677",
+    value: "00000000",
+    refLink: "#",
     icon: <LuPhoneCall />,
   },
   {
@@ -49,7 +49,7 @@ const contactValues = [
 const Contact = () => {
   const [hovered, setHovered] = useState("");
   return (
-    <section className="contact_page overflow-x-hidden">
+    <section className="overflow-x-hidden contact_page">
       <PageHead
         bgPic={
           "bg-[url('https://res.cloudinary.com/dv9aqxptd/image/upload/v1722248959/pyrite/Asset4_rishjn.jpg')]"
@@ -59,7 +59,7 @@ const Contact = () => {
         prevPage={"Home"}
         prevLink={"/"}
       />
-      <section className="px-7 py-24 flex flex-col md:flex-row md:items-start md:justify-center gap-14 md:gap-5">
+      <section className="flex flex-col py-24 px-7 md:flex-row md:items-start md:justify-center gap-14 md:gap-5">
         <div className="contact-cards  flex flex-col items-start gap-8 md:w-[30%] ">
           {contactValues.map((card) => (
             <Link
